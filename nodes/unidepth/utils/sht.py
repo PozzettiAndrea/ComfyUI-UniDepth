@@ -1560,8 +1560,8 @@ class SphHarm(torch.nn.Module):
 
         The ALFs of the first kind are used in spherical harmonics. The spherical
         harmonic of degree `l` and order `m` can be written as
-        `Y_l^m(θ, φ) = N_l^m * P_l^m(cos(θ)) * exp(i m φ)`, where `N_l^m` is the
-        normalization factor and θ and φ are the colatitude and longitude,
+        `Y_l^m(theta, phi) = N_l^m * P_l^m(cos(theta)) * exp(i m phi)`, where `N_l^m` is the
+        normalization factor and theta and phi are the colatitude and longitude,
         repectively. `N_l^m` is chosen in the way that the spherical harmonics form
         a set of orthonormal basis function of L^2(S^2). For the computational
         efficiency of spherical harmonics transform, the normalization factor is
@@ -1574,7 +1574,7 @@ class SphHarm(torch.nn.Module):
             degrees and orders are `[0, 1, 2, ..., l_max]`.
         x: A vector of type `float32`, `float64` containing the sampled points in
             spherical coordinates, at which the ALFs are computed; `x` is essentially
-            `cos(θ)`. For the numerical integration used by the spherical harmonics
+            `cos(theta)`. For the numerical integration used by the spherical harmonics
             transforms, `x` contains the quadrature points in the interval of
             `[-1, 1]`. There are several approaches to provide the quadrature points:
             Gauss-Legendre method (`scipy.special.roots_legendre`), Gauss-Chebyshev
@@ -1582,7 +1582,7 @@ class SphHarm(torch.nn.Module):
             method (Driscoll, James R., and Dennis M. Healy. "Computing Fourier
             transforms and convolutions on the 2-sphere." Advances in applied
             mathematics 15, no. 2 (1994): 202-250.). The Gauss-Legendre quadrature
-            points are nearly equal-spaced along θ and provide exact discrete
+            points are nearly equal-spaced along theta and provide exact discrete
             orthogonality, (P^m)^T W P_m = I, where `T` represents the transpose
             operation, `W` is a diagonal matrix containing the quadrature weights,
             and `I` is the identity matrix. The Gauss-Chebyshev points are equally
