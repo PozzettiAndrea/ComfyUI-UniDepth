@@ -1,0 +1,16 @@
+[dependencies]
+c-compiler = "*"
+av = "*"
+
+[cuda]
+packages = []
+
+[pypi-dependencies]
+huggingface_hub = ">=0.22.0"
+safetensors = ">=0.4.0,<1.0.0"
+einops = ">=0.7.0,<1.0.0"
+timm = "*"
+scipy = "*"
+opencv-python = "*"
+pillow = ">=10.2.0"
+trimesh = "*"

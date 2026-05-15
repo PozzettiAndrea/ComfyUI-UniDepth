@@ -1,0 +1,25 @@
+ComfyUI-UniDepth
+================
+
+This repository bundles a slimmed-down copy of the upstream UniDepth source
+tree (under `nodes/unidepth/`) and downloads pretrained model weights from
+HuggingFace at runtime.
+
+Upstream project:
+    UniDepth: Universal Monocular Metric Depth Estimation
+    UniDepthV2: Universal Monocular Metric Depth Estimation Made Simpler
+    Luigi Piccinelli, Yung-Hsu Yang, Christos Sakaridis, Mattia Segu,
+    Siyuan Li, Wim Abbeloos, Luc Van Gool, Fisher Yu (ETH Zurich)
+    https://github.com/lpiccinelli-eth/UniDepth
+    https://arxiv.org/abs/2403.18913  (CVPR 2024)
+    https://arxiv.org/abs/2502.20110  (V2, 2025)
+
+The upstream code AND the pretrained weights are licensed under
+Creative Commons Attribution-NonCommercial 4.0 International (CC-BY-NC 4.0).
+See `LICENSE-UPSTREAM` for the full text.
+
+The wrapper code authored for this repository (everything outside
+`nodes/unidepth/`) is MIT-licensed; see `LICENSE`.
+
+Because the model weights and vendored upstream source are CC-BY-NC 4.0,
+end-user use of this node pack is **non-commercial only**.

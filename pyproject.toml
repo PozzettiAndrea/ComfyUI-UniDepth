@@ -1,0 +1,13 @@
+[project]
+name = "ComfyUI-UniDepth"
+description = "ComfyUI nodes for UniDepthV2 (Piccinelli et al.) — universal monocular metric depth estimation."
+version = "0.1.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/PozzettiAndrea/ComfyUI-UniDepth"
+
+[tool.comfy]
+PublisherId = "pznodes"
+DisplayName = "UniDepth"
+Icon = "https://raw.githubusercontent.com/PozzettiAndrea/ComfyUI-UniDepth/main/assets/icon.png"
