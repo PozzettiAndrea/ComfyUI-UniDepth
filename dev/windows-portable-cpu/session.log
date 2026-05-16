@@ -1,4 +1,4 @@
-[00:00] Crash dump logging enabled: D:\a\comfy-gpu-ci\comfy-gpu-ci\comfy-test-logs\UniDepth-1125\dev\windows-portable-cpu\crash_dump.log
+[00:00] Crash dump logging enabled: D:\a\comfy-gpu-ci\comfy-gpu-ci\comfy-test-logs\UniDepth-1944\dev\windows-portable-cpu\crash_dump.log
 [00:00] 
 [00:00] [1/5] SYNTAX
 [00:00] ----------------------------------------
@@ -28,131 +28,133 @@ Setting up ComfyUI...
 [00:08]   Downloaded: 70%
 [00:09]   Downloaded: 80%
 [00:10]   Downloaded: 90%
-[00:11]   Downloaded: 100%
-[00:11] Downloaded to C:\Users\stduser\.comfy-test\cache\portable\ComfyUI_portable_v0.21.1.7z
-[00:11] Extracting to cache: C:\Users\stduser\.comfy-test\cache\portable\ComfyUI_portable_v0.21.1
-[00:11] Extracting ComfyUI_portable_v0.21.1.7z...
-[00:11] Using 7z: 7z
-[02:34] Extracted to C:\Users\stduser\.comfy-test\cache\portable\ComfyUI_portable_v0.21.1
-[02:34] Copying from cache to: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1125\portable-comfyui
-[03:19] Installing uv into embedded Python...
-[03:19] Running: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1125\portable-comfyui\ComfyUI_windows_portable\python_embeded\python.exe -m pip install uv
-[03:22] Installing ComfyUI requirements...
-[03:22] Running: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1125\portable-comfyui\ComfyUI_windows_portable\python_embeded\python.exe -m uv pip install -r D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1125\portable-comfyui\ComfyUI_windows_portable\ComfyUI\requirements.txt
-[03:23] 
+[00:12]   Downloaded: 100%
+[00:12] Downloaded to C:\Users\stduser\.comfy-test\cache\portable\ComfyUI_portable_v0.21.1.7z
+[00:12] Extracting to cache: C:\Users\stduser\.comfy-test\cache\portable\ComfyUI_portable_v0.21.1
+[00:12] Extracting ComfyUI_portable_v0.21.1.7z...
+[00:12] Using 7z: 7z
+[02:21] Extracted to C:\Users\stduser\.comfy-test\cache\portable\ComfyUI_portable_v0.21.1
+[02:21] Copying from cache to: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui
+[04:08] Installing uv into embedded Python...
+[04:08] Running: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\python_embeded\python.exe -m pip install uv
+[04:12] Installing ComfyUI requirements...
+[04:12] Running: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\python_embeded\python.exe -m uv pip install -r D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\ComfyUI\requirements.txt
+[04:12] 
 Installing custom node...
-[03:23] Copying ComfyUI-UniDepth to custom_nodes/...
-[03:24] Installing node requirements...
-[03:24] Running: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1125\portable-comfyui\ComfyUI_windows_portable\python_embeded\python.exe -m pip install -r D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1125\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth\requirements.txt
-[03:27] 
+[04:12] Copying ComfyUI-UniDepth to custom_nodes/...
+[04:12] Installing node requirements...
+[04:12] Running: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\python_embeded\python.exe -m pip install -r D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth\requirements.txt
+[04:15] 
 Running install.py...
-[03:27] Running: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1125\portable-comfyui\ComfyUI_windows_portable\python_embeded\python.exe D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1125\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth\install.py
-[03:29]   [comfy-env] _discover: scanning D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1125\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes
-[03:29]   [comfy-env] _discover: ComfyUI-UniDepth -> unidepth-nodes (custom_nodes\ComfyUI-UniDepth\nodes\comfy-env.toml)
-[03:29]   [comfy-env] Workspace: C:\Users\stduser\AppData\Local\Programs\comfy-env
-[03:29]   [comfy-env] ComfyUI: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1125\portable-comfyui\ComfyUI_windows_portable\ComfyUI
-[03:29]   [comfy-env] Found 1 node config(s):
-[03:29]     - unidepth-nodes <- custom_nodes\ComfyUI-UniDepth\nodes\comfy-env.toml (python=host)
-[03:29]   [comfy-env] Bootstrap interpreter has python 3.13 + torch 2.11.0 (cu130). Looking for cuda-only wheels matching cu130/torch2.11/cp313.
-[03:31]   [comfy-env] GPU: No GPU detected
-[03:31]   [comfy-env] Comfyui feature -> torch 2.11.0 from https://download.pytorch.org/whl/cu130 (CUDA 13.0 via bootstrap torch)
-[03:31]   Generated C:\Users\stduser\AppData\Local\Programs\comfy-env\pixi.toml
-[03:31]   [comfy-env] Installing 1 environment(s):
-[03:31]     - unidepth-nodes (python=host, 10 pypi deps)
-[03:31]   [comfy-env] Running `pixi install -e unidepth-nodes`...
-[03:56]      WARN Skipped running the post-link scripts because `run-post-link-scripts` = `false`
-[03:56]     	- Scripts/.librsvg-pre-unlink.bat
-[03:56]     To enable them, run:
-[03:56]     	pixi config set --local run-post-link-scripts insecure
-[03:56]     More info:
-[03:56]     	https://pixi.sh/latest/reference/pixi_configuration/#run-post-link-scripts
-[04:52]     The unidepth-nodes environment has been installed.
-[04:52]   [comfy-env] Recorded install hash 3060afebfaed -> C:\Users\stduser\AppData\Local\Programs\comfy-env\install.hash
-[04:52]   [comfy-env] Install log: C:\Users\stduser\AppData\Local\Programs\comfy-env\install.log
-[04:52]   
-[04:52]   Installation complete!
-[04:53] Installing validation endpoint...
-[04:53]   Cloning PozzettiAndrea/ComfyUI-validate-endpoint...
-[04:53] Running: git clone --depth 1 https://x-access-token:***@github.com/PozzettiAndrea/ComfyUI-validate-endpoint.git D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1125\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-validate-endpoint
-[04:54] [INSTALL] PASSED
-[04:54] 
-[04:54] [3/5] REGISTRATION
-[04:54] ----------------------------------------
-[04:54] 
+[04:15] Running: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\python_embeded\python.exe D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth\install.py
+[04:17]   [comfy-env] _discover: scanning D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes
+[04:17]   [comfy-env] _discover: ComfyUI-UniDepth -> unidepth-nodes (custom_nodes\ComfyUI-UniDepth\nodes\comfy-env.toml)
+[04:17]   [comfy-env] Workspace: C:\Users\stduser\AppData\Local\Programs\comfy-env
+[04:17]   [comfy-env] ComfyUI: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\ComfyUI
+[04:17]   [comfy-env] Found 1 node config(s):
+[04:17]     - unidepth-nodes <- custom_nodes\ComfyUI-UniDepth\nodes\comfy-env.toml (python=host)
+[04:18]   [comfy-env] Bootstrap interpreter has python 3.13 + torch 2.11.0 (cu130). Looking for cuda-only wheels matching cu130/torch2.11/cp313.
+[04:19]   [comfy-env] GPU: No GPU detected
+[04:19]   [comfy-env] Comfyui feature -> torch 2.11.0 from https://download.pytorch.org/whl/cu130 (CUDA 13.0 via bootstrap torch)
+[04:19]   Generated C:\Users\stduser\AppData\Local\Programs\comfy-env\pixi.toml
+[04:19]   [comfy-env] Installing 1 environment(s):
+[04:19]     - unidepth-nodes (python=host, 10 pypi deps)
+[04:19]   [comfy-env] Running `pixi install -e unidepth-nodes`...
+[04:43]      WARN Skipped running the post-link scripts because `run-post-link-scripts` = `false`
+[04:43]     	- Scripts/.librsvg-pre-unlink.bat
+[04:43]     To enable them, run:
+[04:43]     	pixi config set --local run-post-link-scripts insecure
+[04:43]     More info:
+[04:43]     	https://pixi.sh/latest/reference/pixi_configuration/#run-post-link-scripts
+[05:38]     The unidepth-nodes environment has been installed.
+[05:38]   [comfy-env] Recorded install hash 3060afebfaed -> C:\Users\stduser\AppData\Local\Programs\comfy-env\install.hash
+[05:38]   [comfy-env] Install log: C:\Users\stduser\AppData\Local\Programs\comfy-env\install.log
+[05:38]   
+[05:38]   Installation complete!
+[05:38] Installing validation endpoint...
+[05:38]   Cloning PozzettiAndrea/ComfyUI-validate-endpoint...
+[05:38] Running: git clone --depth 1 https://x-access-token:***@github.com/PozzettiAndrea/ComfyUI-validate-endpoint.git D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-validate-endpoint
+[05:40] [INSTALL] PASSED
+[05:40] 
+[05:40] [3/5] REGISTRATION
+[05:40] ----------------------------------------
+[05:40] 
 [DEBUG] server=None, api=None
-[04:54] 
+[05:40] 
 Starting ComfyUI server...
-[04:54] Starting ComfyUI server on port 41892...
-[04:54] Starting ComfyUI server on port 41892...
-[04:54] Server stdout/stderr -> D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1125\server.log
-[04:54] Waiting for server to be ready (timeout: 600s)...
-[04:54]   [ComfyUI:stdout] reader thread died: AttributeError("'NoneType' object has no attribute 'readline'")
-[04:54]   [ComfyUI:stderr] reader thread died: AttributeError("'NoneType' object has no attribute 'readline'")
-[05:16] Server responding, waiting for nodes to load...
-[05:36] Server is ready!
-[05:36] Checking for import errors in server logs...
-[05:36] No import errors detected
-[05:36] Found 720 registered nodes
-[05:36] [REGISTRATION] PASSED
-[05:36] 
-[05:36] [4/5] INSTANTIATION
-[05:36] ----------------------------------------
-[05:36] 
-[DEBUG] server=<comfy_test.comfyui.server.ComfyUIServer object at 0x000002D33130D610>, api=<comfy_test.comfyui.api.ComfyUIAPI object at 0x000002D331FB7BD0>
-[05:36] Testing node constructors...
-[05:41] All 5 node(s) instantiated successfully!
-[05:41] [INSTANTIATION] PASSED
-[05:41] 
-[05:41] [5/5] EXECUTION
-[05:41] ----------------------------------------
-[05:41] 
-[DEBUG] server=<comfy_test.comfyui.server.ComfyUIServer object at 0x000002D33130D610>, api=<comfy_test.comfyui.api.ComfyUIAPI object at 0x000002D331FB7BD0>
-[05:41] CPU runner - will execute 1 workflow(s)
-[05:41] Running 2 workflow(s) (all with videos)...
-[05:41] Installing screenshot dependencies (playwright, pillow)...
-[05:44]   Packages installed, downloading chromium browser...
-[06:00]   Screenshot dependencies installed successfully
-[06:01] Starting headless browser...
-[06:02]   Downloading Mesa llvmpipe for Windows...
-[06:06]   Copied opengl32.dll to Chromium dir
-[06:06]   Copied libgallium_wgl.dll to Chromium dir
-[06:06]   Using Mesa llvmpipe (desktop GL) -- multithreaded CPU rendering
-[06:08] Capturing execution frames: simple.json
-[06:17]   Frame 1 saved (frame_000.jpg, t=0.0s)
-[06:17]   Validating workflow...
-[06:17]   Queuing workflow for execution...
-[06:19]   Frame 2 saved (frame_001.jpg, t=2.4s)
-[06:19]   [capture-periodic] freeze=6ms shot=153ms unfreeze=6ms saved=True
-[06:21]   Frame 3 saved (frame_002.jpg, t=4.7s)
-[06:21]   [capture-periodic] freeze=6ms shot=155ms unfreeze=7ms saved=True
-[06:23]   [capture-loop] iter=50 t=6.3s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=8 ram=6.0/16.0GB (37%) swap=0.3/2.9GB (11%) cpu=65% browser_rss=0.68GB
-[06:29]   [capture-loop] iter=100 t=12.8s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=6 ram=6.1/16.0GB (38%) swap=0.3/2.9GB (11%) cpu=61% browser_rss=0.68GB
-[06:35]   [capture-loop] iter=150 t=18.7s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=6.2/16.0GB (39%) swap=0.3/2.9GB (11%) cpu=47% browser_rss=0.68GB
-[06:41]   [capture-loop] iter=200 t=24.6s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=6 ram=6.1/16.0GB (38%) swap=0.3/2.9GB (11%) cpu=49% browser_rss=0.61GB
-[06:47]   [capture-loop] iter=250 t=30.5s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=6.1/16.0GB (38%) swap=0.3/2.9GB (11%) cpu=23% browser_rss=0.61GB
-[06:53]   [capture-loop] iter=300 t=36.4s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=8 ram=7.1/16.0GB (45%) swap=0.3/2.9GB (11%) cpu=45% browser_rss=0.61GB
-[07:00]   [capture-loop] iter=350 t=43.3s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=7 ram=8.0/16.0GB (50%) swap=0.3/2.9GB (11%) cpu=82% browser_rss=0.60GB
-[07:01]   Frame 4 saved (frame_003.jpg, t=44.8s)
-[07:01]   [capture-periodic] freeze=6ms shot=148ms unfreeze=9ms saved=True
-[07:06]   [capture-loop] iter=400 t=49.5s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=6 ram=7.7/16.0GB (48%) swap=0.3/2.9GB (11%) cpu=86% browser_rss=0.60GB
-[07:12]   [capture-loop] iter=450 t=55.5s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=6 ram=7.5/16.0GB (47%) swap=0.3/2.9GB (11%) cpu=85% browser_rss=0.58GB
-[07:18]   [capture-loop] iter=500 t=61.7s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=6 ram=7.6/16.0GB (48%) swap=0.3/2.9GB (11%) cpu=86% browser_rss=0.58GB
-[07:24]   [capture-loop] iter=550 t=67.8s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=6 ram=7.6/16.0GB (48%) swap=0.3/2.9GB (11%) cpu=85% browser_rss=0.57GB
-[07:30]   [capture-loop] iter=600 t=74.0s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=6 ram=8.0/16.0GB (50%) swap=0.3/2.9GB (11%) cpu=85% browser_rss=0.57GB
-[07:36]   Node executed (2 total), capturing...
-[07:36]   Frame 5 saved (frame_004.jpg, t=79.7s)
-[07:36]   [capture-node] freeze=6ms shot=143ms unfreeze=0ms saved=True
-[07:36]   Execution complete (t=79.7s)
-[07:36]   Captured 5 unique frames over 79.84s
-[07:36]   [debug] iframes: 0
-[07:36]   [timing] trigger_3d_previews: 0.0s
-[07:38]   Saved high-quality screenshot: simple_executed.png
-[07:39]   [timing] final_screenshot: 0.3s
-[07:39]   [2/2] SKIPPED (not in cpu list) with_intrinsics.json
-[07:39] Results saved to D:\a\comfy-gpu-ci\comfy-gpu-ci\comfy-test-logs\UniDepth-1125\dev\windows-portable-cpu\results.json
-[07:39] Model report: 12 files, 1.3 GB -> D:\a\comfy-gpu-ci\comfy-gpu-ci\comfy-test-logs\UniDepth-1125\dev\windows-portable-cpu\models.json
-[07:39] Saved: D:\a\comfy-gpu-ci\comfy-gpu-ci\comfy-test-logs\UniDepth-1125\dev\windows-portable-cpu\index.html
-[07:39] [EXECUTION] PASSED
-[07:39] 
+[05:40] Starting ComfyUI server on port 41880...
+[05:40] Starting ComfyUI server on port 41880...
+[05:40] Server stdout/stderr -> D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\server.log
+[05:40]   [ComfyUI:stdout] reader thread died: AttributeError("'NoneType' object has no attribute 'readline'")
+[05:40] Waiting for server to be ready (timeout: 600s)...
+[05:40]   [ComfyUI:stderr] reader thread died: AttributeError("'NoneType' object has no attribute 'readline'")
+[06:02] Server responding, waiting for nodes to load...
+[06:22] Server is ready!
+[06:22] Checking for import errors in server logs...
+[06:22] No import errors detected
+[06:22] Found 720 registered nodes
+[06:22] [REGISTRATION] PASSED
+[06:22] 
+[06:22] [4/5] INSTANTIATION
+[06:22] ----------------------------------------
+[06:22] 
+[DEBUG] server=<comfy_test.comfyui.server.ComfyUIServer object at 0x00000247FDFF1790>, api=<comfy_test.comfyui.api.ComfyUIAPI object at 0x00000247FDFF2720>
+[06:22] Testing node constructors...
+[06:25] All 5 node(s) instantiated successfully!
+[06:25] [INSTANTIATION] PASSED
+[06:25] 
+[06:25] [5/5] EXECUTION
+[06:25] ----------------------------------------
+[06:25] 
+[DEBUG] server=<comfy_test.comfyui.server.ComfyUIServer object at 0x00000247FDFF1790>, api=<comfy_test.comfyui.api.ComfyUIAPI object at 0x00000247FDFF2720>
+[06:25] CPU runner - will execute 1 workflow(s)
+[06:25] Running 2 workflow(s) (all with videos)...
+[06:25] Installing screenshot dependencies (playwright, pillow)...
+[06:27]   Packages installed, downloading chromium browser...
+[06:40]   Screenshot dependencies installed successfully
+[06:41] Starting headless browser...
+[06:41]   Downloading Mesa llvmpipe for Windows...
+[06:45]   Copied opengl32.dll to Chromium dir
+[06:45]   Copied libgallium_wgl.dll to Chromium dir
+[06:46]   Using Mesa llvmpipe (desktop GL) -- multithreaded CPU rendering
+[06:46] Capturing execution frames: simple.json
+[06:55]   Frame 1 saved (frame_000.jpg, t=0.0s)
+[06:55]   Validating workflow...
+[06:55]   Queuing workflow for execution...
+[06:57]   Frame 2 saved (frame_001.jpg, t=2.3s)
+[06:57]   [capture-periodic] freeze=3ms shot=123ms unfreeze=4ms saved=True
+[06:59]   Frame 3 saved (frame_002.jpg, t=4.5s)
+[06:59]   [capture-periodic] freeze=4ms shot=128ms unfreeze=7ms saved=True
+[07:01]   [capture-loop] iter=50 t=5.9s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=5.5/16.0GB (34%) swap=0.2/2.9GB (8%) cpu=34% browser_rss=0.67GB
+[07:07]   [capture-loop] iter=100 t=11.9s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=5.5/16.0GB (34%) swap=0.2/2.9GB (8%) cpu=28% browser_rss=0.67GB
+[07:12]   [capture-loop] iter=150 t=17.5s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=5.6/16.0GB (35%) swap=0.2/2.9GB (8%) cpu=31% browser_rss=0.67GB
+[07:18]   [capture-loop] iter=200 t=23.3s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=6.6/16.0GB (42%) swap=0.2/2.9GB (8%) cpu=40% browser_rss=0.61GB
+[07:24]   [capture-loop] iter=250 t=29.5s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=5 ram=7.5/16.0GB (47%) swap=0.2/2.9GB (8%) cpu=60% browser_rss=0.60GB
+[07:28]   Frame 4 saved (frame_003.jpg, t=33.1s)
+[07:28]   [capture-periodic] freeze=4ms shot=151ms unfreeze=5ms saved=True
+[07:30]   [capture-loop] iter=300 t=35.2s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=5 ram=7.1/16.0GB (44%) swap=0.4/2.9GB (13%) cpu=52% browser_rss=0.60GB
+[07:36]   [capture-loop] iter=350 t=41.1s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=7.0/16.0GB (44%) swap=0.4/2.9GB (13%) cpu=61% browser_rss=0.60GB
+[07:42]   [capture-loop] iter=400 t=47.0s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=5 ram=7.0/16.0GB (44%) swap=0.4/2.9GB (13%) cpu=60% browser_rss=0.60GB
+[07:47]   [capture-loop] iter=450 t=52.7s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=5 ram=7.0/16.0GB (44%) swap=0.4/2.9GB (13%) cpu=61% browser_rss=0.60GB
+[07:53]   [capture-loop] iter=500 t=58.6s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=5 ram=7.1/16.0GB (44%) swap=0.4/2.9GB (13%) cpu=59% browser_rss=0.57GB
+[07:59]   [capture-loop] iter=550 t=64.5s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=7.3/16.0GB (46%) swap=0.4/2.9GB (13%) cpu=65% browser_rss=0.57GB
+[08:02]   Node executed (1 total), capturing...
+[08:02]   Frame 5 saved (frame_004.jpg, t=67.6s)
+[08:02]   [capture-node] freeze=4ms shot=143ms unfreeze=4ms saved=True
+[08:03]   Node executed (2 total), capturing...
+[08:03]   Frame 6 saved (frame_005.jpg, t=68.1s)
+[08:03]   [capture-node] freeze=4ms shot=115ms unfreeze=0ms saved=True
+[08:03]   Execution complete (t=68.1s)
+[08:03]   Captured 6 unique frames over 68.21s
+[08:03]   [debug] iframes: 0
+[08:03]   [timing] trigger_3d_previews: 0.0s
+[08:05]   Saved high-quality screenshot: simple_executed.png
+[08:05]   [timing] final_screenshot: 0.3s
+[08:06]   [2/2] SKIPPED (not in cpu list) with_intrinsics.json
+[08:06] Results saved to D:\a\comfy-gpu-ci\comfy-gpu-ci\comfy-test-logs\UniDepth-1944\dev\windows-portable-cpu\results.json
+[08:06] Model report: 12 files, 1.3 GB -> D:\a\comfy-gpu-ci\comfy-gpu-ci\comfy-test-logs\UniDepth-1944\dev\windows-portable-cpu\models.json
+[08:06] Saved: D:\a\comfy-gpu-ci\comfy-gpu-ci\comfy-test-logs\UniDepth-1944\dev\windows-portable-cpu\index.html
+[08:06] [EXECUTION] PASSED
+[08:06] 
 windows_portable: PASSED
-[07:39] Stopping ComfyUI server...
+[08:06] Stopping ComfyUI server...
