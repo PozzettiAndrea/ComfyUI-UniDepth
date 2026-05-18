@@ -1,0 +1,298 @@
+setup plugin alembic.autogenerate.schemas
+setup plugin alembic.autogenerate.tables
+setup plugin alembic.autogenerate.types
+setup plugin alembic.autogenerate.constraints
+setup plugin alembic.autogenerate.defaults
+setup plugin alembic.autogenerate.comments
+[comfy-env] ComfyUI-UniDepth: 1 isolation env(s):
+[comfy-env]   nodes -> C:\workspaces\UniDepth-2022\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth\nodes
+[comfy-env] Workspace: C:\Users\ContainerUser\AppData\Local\Programs\comfy-env
+[comfy-env]     env: C:\Users\ContainerUser\AppData\Local\Programs\comfy-env\.pixi\envs\unidepth-nodes  [OK]
+[comfy-env] prestartup complete
+
+Prestartup times for custom nodes:
+   0.4 seconds: C:\workspaces\UniDepth-2022\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth
+
+Found comfy_kitchen backend triton: {'available': False, 'disabled': True, 'unavailable_reason': "ImportError: No module named 'triton'", 'capabilities': []}
+Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_mxfp8', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'scaled_mm_mxfp8', 'scaled_mm_nvfp4']}
+Found comfy_kitchen backend cuda: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'scaled_mm_nvfp4']}
+Checkpoint files will always be loaded safely.
+Total VRAM 24576 MB, total RAM 32684 MB
+pytorch version: 2.11.0+cu130
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 3090 : cudaMallocAsync
+Using async weight offloading with 2 streams
+Enabled pinned memory 13073.0
+Using pytorch attention
+aimdo: src-win/cuda-detour.c:38:INFO:aimdo_setup_hooks: installing 6 hooks
+aimdo: src-win/cuda-detour.c:28:DEBUG:install_hook_entries: hooks successfully installed
+aimdo: src-win/shmem-detect.c:80:INFO:comfy-aimdo WDDM adapter match: NVIDIA GeForce RTX 3090 runtime_luid=00000000:0087edd1 dxgi_luid=00000000:0087edd1
+aimdo: src/control.c:152:INFO:comfy-aimdo inited for GPU: NVIDIA GeForce RTX 3090 (VRAM: 24575 MB)
+DynamicVRAM support detected and enabled
+Python version: 3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]
+ComfyUI version: 0.21.1
+comfy-aimdo version: 0.3.0
+comfy-kitchen version: 0.2.8
+****** User settings have been changed to be stored on the server instead of browser storage. ******
+****** For multi-user setups add the --multi-user CLI argument to enable multiple user profiles. ******
+ComfyUI frontend version: 1.43.18
+[Prompt Server] web root: C:\workspaces\UniDepth-2022\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\comfyui_frontend_package\static
+Asset seeder disabled
+[comfy-env] Version: 0.3.89
+[comfy-env] register_nodes: ComfyUI-UniDepth
+[comfy-env] ComfyUI source dir: C:\workspaces\UniDepth-2022\portable-comfyui\ComfyUI_windows_portable\ComfyUI
+[comfy-env] Found 1 isolation env(s)
+[comfy-env] Scanning nodes metadata (isolation root)...
+[comfy-env] unidepth-nodes: Library/bin has 237 DLLs
+[comfy-env] Metadata scan: C:\Users\ContainerUser\.pixi\bin\pixi.exe run --as-is --manifest-path C:\Users\ContainerUser\AppData\Local\Programs\comfy-env\pixi.toml -e unidepth-nodes python C:\Users\ContainerUser\AppData\Local\Temp\comfy_meta_i6ugir03.py C:\workspaces\UniDepth-2022\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth nodes C:\Users\ContainerUser\AppData\Local\Temp\comfy_meta_out_b7gh7vr1.pkl
+[comfy-env] Scan env PATH for nodes:
+[comfy-env]   [0] C:\Users\ContainerUser\AppData\Local\Programs\comfy-env\.pixi\envs\unidepth-nodes
+[comfy-env]   [1] C:\Users\ContainerUser\AppData\Local\Programs\comfy-env\.pixi\envs\unidepth-nodes\Library\bin
+[comfy-env]   [2] C:\Users\ContainerUser\AppData\Local\Programs\comfy-env\.pixi\envs\unidepth-nodes\Scripts
+[comfy-env]   [3] C:\Users\ContainerUser\AppData\Local\Programs\comfy-env\.pixi\envs\unidepth-nodes\Lib\site-packages\bpy
+[comfy-env]   [4] C:\Windows\System32
+[comfy-env]   [5] C:\Windows
+[comfy-env]   [6] C:\Windows\System32\Wbem
+[comfy-env] Metadata scan stderr for nodes:
+[comfy-env]   [meta-scan] importing nodes from C:\workspaces\UniDepth-2022\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth
+[comfy-env]   ERROR:root:Failed to import comfy_kitchen, Error: No module named 'comfy_kitchen', fp8 and fp4 support will not be available.
+[comfy-env]   [meta-scan] import OK
+[comfy-env] Scanned nodes: 5 nodes (37.2s)
+[comfy-env] Scanned nodes root: 5 nodes (37.2s)
+[comfy-env] Imported nodes root: 5 nodes (isolation)
+[comfy-env] Registered 5 total nodes
+
+Import times for custom nodes:
+   0.0 seconds: C:\workspaces\UniDepth-2022\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\websocket_image_save.py
+   0.0 seconds: C:\workspaces\UniDepth-2022\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-validate-endpoint
+  38.1 seconds: C:\workspaces\UniDepth-2022\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth
+
+Context impl SQLiteImpl.
+Will assume non-transactional DDL.
+Context impl SQLiteImpl.
+Will assume non-transactional DDL.
+Running upgrade  -> 0001_assets, Initial assets schema
+Revision ID: 0001_assets
+Revises: None
+Create Date: 2025-12-10 00:00:00
+Running upgrade 0001_assets -> 0002_merge_to_asset_references, Merge AssetInfo and AssetCacheState into unified asset_references table.
+Running upgrade 0002_merge_to_asset_references -> 0003_add_metadata_job_id, Add system_metadata and job_id columns to asset_references.
+Change preview_id FK from assets.id to asset_references.id.
+Database upgraded from None to 0003_add_metadata_job_id
+Starting server
+
+To see the GUI go to: http://127.0.0.1:41890
+=== /validate endpoint called ===
+Received JSON with keys: ['prompt']
+Prompt has 6 nodes
+  Node 1: LoadImage
+    Inputs: {"image": "unidepth_demo.png"}
+  Node 2: UniDepthLoader
+    Inputs: {"model_name": "unidepth-v2-vitl14", "dtype": "fp32", "resolution_level": 9, "interpolation_mode": "bilinear"}
+  Node 3: UniDepthInfer
+    Inputs: {"depth_vmin": 0.01, "depth_vmax": 10, "preview_cmap": "magma_r", "unidepth_model": ["2", 0], "images": ["1", 0]}
+  Node 4: PreviewImage
+    Inputs: {"images": ["3", 0]}
+  Node 5: PreviewImage
+    Inputs: {"images": ["3", 2]}
+  Node 6: UniDepthSavePointCloud
+    Inputs: {"filename_prefix": "unidepth_points", "batch_index": 0, "points": ["3", 5], "rgb_image": ["1", 0]}
+Generated prompt_id: 598635d7-9ba0-43b8-a9cc-ace6ced94d3c
+Calling execution.validate_prompt()...
+Validation result: valid=True
+=== Validation PASSED ===
+got prompt
+[comfy-env] Running UniDepthLoader: model_name: 'unidepth-v2-vitl14', dtype: 'fp32', resolution_level: 9, interpolation_mode: 'bilinear'
+[VRAM] Before UniDepthLoader: 1271 / 24575 MB
+[comfy-env] SubprocessWorker: C:\Users\ContainerUser\AppData\Local\Programs\comfy-env\.pixi\envs\unidepth-nodes\python.exe
+[comfy-env] env_vars: {'COMFYUI_BASE': 'C:\\workspaces\\UniDepth-2022\\portable-comfyui\\ComfyUI_windows_portable\\ComfyUI'}
+[SubprocessWorker] call_method: nodes.load_model.UniDepthLoader.EXECUTE_NORMALIZED
+[SubprocessWorker] acquired lock, ensuring started...
+[comfy-env] unidepth-nodes: Library/bin has 237 DLLs
+[ComfyUI-UniDepth] python: C:\Users\ContainerUser\AppData\Local\Programs\comfy-env\.pixi\envs\unidepth-nodes\python.exe
+[ComfyUI-UniDepth] sys_path sent to worker: ['C:\\workspaces\\UniDepth-2022\\portable-comfyui\\ComfyUI_windows_portable\\ComfyUI', 'C:\\workspaces\\UniDepth-2022\\portable-comfyui\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\ComfyUI-UniDepth', 'C:\\Users\\ContainerUser\\AppData\\Local\\Programs\\comfy-env\\.pixi\\envs\\unidepth-nodes\\Lib\\site-packages', 'C:\\workspaces\\UniDepth-2022\\portable-comfyui\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\ComfyUI-UniDepth']
+[SubprocessWorker] is_pixi=True, python=C:\Users\ContainerUser\AppData\Local\Programs\comfy-env\.pixi\envs\unidepth-nodes\python.exe
+[SubprocessWorker] launching cmd=['C:\\Users\\ContainerUser\\.pixi\\bin\\pixi.exe', 'run', '--as-is', '--manifest-path', 'C:\\Users\\ContainerUser\\AppData\\Local\\Programs\\comfy-env\\pixi.toml', '-e', 'unidepth-nodes', 'python', 'C:\\Users\\ContainerUser\\AppData\\Local\\Temp\\comfyui_pvenv_7z1r1_he\\persistent_worker.py', 'tcp://127.0.0.1:57052']...
+[worker:ComfyUI-UniDepth] ERROR: Failed to import comfy_kitchen, Error: No module named 'comfy_kitchen', fp8 and fp4 support will not be available.
+[SubprocessWorker] worker started/confirmed
+[SubprocessWorker] serializing kwargs to shm...
+[SubprocessWorker] created 0 shm blocks
+[SubprocessWorker] sending request via socket...
+[SubprocessWorker] call_id=1 sending call_method
+C:\Users\ContainerUser\AppData\Local\Programs\comfy-env\.pixi\envs\unidepth-nodes\Lib\site-packages\timm\models\layers\__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[worker:ComfyUI-UniDepth] Cannot import NystromAttention, you can not run original UniDepth. UniDepthV2 is available.
+C:\Users\ContainerUser\AppData\Local\Programs\comfy-env\.pixi\envs\unidepth-nodes\Lib\site-packages\huggingface_hub\file_download.py:138: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\workspaces\UniDepth-2022\portable-comfyui\ComfyUI_windows_portable\ComfyUI\models\unidepth\models--lpiccinelli--unidepth-v2-vitl14. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+[worker:ComfyUI-UniDepth] WARNING: xFormers not available
+[worker:ComfyUI-UniDepth] WARNING: xFormers not available
+[worker:ComfyUI-UniDepth] Not loading pretrained weights for backbone
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[worker:ComfyUI-UniDepth] WARNING: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[SubprocessWorker] got response: ok
+[comfy-env] UniDepthLoader done (41.46s): result: NodeOutput
+[VRAM] After UniDepthLoader: 1271 / 24575 MB
+[comfy-env] Running UniDepthInfer: depth_vmin: 0.01, depth_vmax: 10.0, preview_cmap: 'magma_r', unidepth_model: dict, images: torch.float32 [1,480,640,3] cpu
+[VRAM] Before UniDepthInfer: 1271 / 24575 MB
+[SubprocessWorker] call_method: nodes.nodes_inference.UniDepthInfer.EXECUTE_NORMALIZED
+[SubprocessWorker] acquired lock, ensuring started...
+[ComfyUI-UniDepth] Health check: ping (timeout=5.0s)...
+[ComfyUI-UniDepth] Health check: ok
+[SubprocessWorker] worker started/confirmed
+[comfy-env] PRE-SERIALIZE 'images' shape: torch.Size([1, 480, 640, 3])
+[SubprocessWorker] serializing kwargs to shm...
+[SubprocessWorker] created 0 shm blocks
+[SubprocessWorker] sending request via socket...
+[SubprocessWorker] call_id=2 sending call_method
+[worker:ComfyUI-UniDepth] [comfy-env] _from_shm got dict with keys: ['__type__', 'strategy', 'manager_path', 'storage_key', 'storage_size']
+[worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZE TensorRef: tensor_size=[1, 480, 640, 3]
+[worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZED tensor shape: torch.Size([1, 480, 640, 3])
+[worker:ComfyUI-UniDepth] [VRAM] +206MB (now 206MB) reserved=224MB peak=206MB
+[worker:ComfyUI-UniDepth] [VRAM] +1187MB (now 1393MB) reserved=1408MB peak=1393MB
+[worker:ComfyUI-UniDepth] [VRAM] +417MB (now 1811MB) reserved=1952MB peak=1811MB
+[SubprocessWorker] callback 'report_progress' from call_id=2
+[SubprocessWorker] got response: ok
+[comfy-env] Created 1 model patchers: ['UniDepthV2_1']
+[comfy-env] UniDepthInfer done (2.35s): result: NodeOutput
+[VRAM] After UniDepthInfer: 1271 / 24575 MB
+[VRAM] Loaded: SubprocessModel (1349 MB)
+[comfy-env] Running UniDepthSavePointCloud: filename_prefix: 'unidepth_points', batch_index: 0, points: dict, rgb_image: torch.float32 [1,480,640,3] cpu
+[VRAM] Before UniDepthSavePointCloud: 1271 / 24575 MB
+[VRAM] Loaded: SubprocessModel (1349 MB)
+[SubprocessWorker] call_method: nodes.preview_nodes.UniDepthSavePointCloud.EXECUTE_NORMALIZED
+[SubprocessWorker] acquired lock, ensuring started...
+[ComfyUI-UniDepth] Health check: ping (timeout=5.0s)...
+[ComfyUI-UniDepth] Health check: ok
+[SubprocessWorker] worker started/confirmed
+[comfy-env] PRE-SERIALIZE 'rgb_image' shape: torch.Size([1, 480, 640, 3])
+[SubprocessWorker] serializing kwargs to shm...
+[SubprocessWorker] created 0 shm blocks
+[SubprocessWorker] sending request via socket...
+[SubprocessWorker] call_id=3 sending call_method
+[worker:ComfyUI-UniDepth] [comfy-env] _from_shm got dict with keys: ['__type__', 'strategy', 'manager_path', 'storage_key', 'storage_size']
+[worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZE TensorRef: tensor_size=[1, 3, 480, 640]
+[worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZED tensor shape: torch.Size([1, 3, 480, 640])
+[worker:ComfyUI-UniDepth] [comfy-env] _from_shm got dict with keys: ['__type__', 'strategy', 'manager_path', 'storage_key', 'storage_size']
+[worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZE TensorRef: tensor_size=[1, 480, 640, 3]
+[worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZED tensor shape: torch.Size([1, 480, 640, 3])
+[SubprocessWorker] got response: ok
+[comfy-env] UniDepthSavePointCloud done (0.07s): result: NodeOutput
+[VRAM] After UniDepthSavePointCloud: 1271 / 24575 MB
+[VRAM] Loaded: SubprocessModel (1349 MB)
+Prompt executed in 44.00 seconds
+[comfy-env] [VRAM] Before offload 'UniDepthV2_1' (1349 MB) -> cpu: 1271 / 24575 MB
+[ComfyUI-UniDepth] Health check: ping (timeout=5.0s)...
+[ComfyUI-UniDepth] Health check: failed
+[ComfyUI-UniDepth] Socket unhealthy, restarting worker...
+[comfy-env] Invalidated 1 stale model patchers (will be cleaned up during next unload)
+[comfy-env] unidepth-nodes: Library/bin has 237 DLLs
+[ComfyUI-UniDepth] python: C:\Users\ContainerUser\AppData\Local\Programs\comfy-env\.pixi\envs\unidepth-nodes\python.exe
+[ComfyUI-UniDepth] sys_path sent to worker: ['C:\\workspaces\\UniDepth-2022\\portable-comfyui\\ComfyUI_windows_portable\\ComfyUI', 'C:\\workspaces\\UniDepth-2022\\portable-comfyui\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\ComfyUI-UniDepth', 'C:\\Users\\ContainerUser\\AppData\\Local\\Programs\\comfy-env\\.pixi\\envs\\unidepth-nodes\\Lib\\site-packages', 'C:\\workspaces\\UniDepth-2022\\portable-comfyui\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\ComfyUI-UniDepth']
+[SubprocessWorker] is_pixi=True, python=C:\Users\ContainerUser\AppData\Local\Programs\comfy-env\.pixi\envs\unidepth-nodes\python.exe
+[SubprocessWorker] launching cmd=['C:\\Users\\ContainerUser\\.pixi\\bin\\pixi.exe', 'run', '--as-is', '--manifest-path', 'C:\\Users\\ContainerUser\\AppData\\Local\\Programs\\comfy-env\\pixi.toml', '-e', 'unidepth-nodes', 'python', 'C:\\Users\\ContainerUser\\AppData\\Local\\Temp\\comfyui_pvenv_7z1r1_he\\persistent_worker.py', 'tcp://127.0.0.1:64821']...
+Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "asyncio\events.py", line 89, in _run
+  File "asyncio\proactor_events.py", line 165, in _call_connection_lost
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+[worker:ComfyUI-UniDepth] ERROR: Failed to import comfy_kitchen, Error: No module named 'comfy_kitchen', fp8 and fp4 support will not be available.
+[SubprocessWorker] call_id=4 sending model_to_device
+Model 'UniDepthV2_1' gone from worker (restarted?), treating as offloaded
+[comfy-env] [VRAM] After offload 'UniDepthV2_1' (1349 MB): 1271 / 24575 MB
+=== /validate endpoint called ===
+Received JSON with keys: ['prompt']
+Prompt has 6 nodes
+  Node 1: LoadImage
+    Inputs: {"image": "unidepth_demo.png"}
+  Node 2: UniDepthLoader
+    Inputs: {"model_name": "unidepth-v2-vitl14", "dtype": "fp32", "resolution_level": 9, "interpolation_mode": "bilinear"}
+  Node 3: UniDepthInfer
+    Inputs: {"depth_vmin": 0.01, "depth_vmax": 10, "preview_cmap": "magma_r", "unidepth_model": ["2", 0], "images": ["1", 0], "intrinsics": ["6", 0]}
+  Node 4: PreviewImage
+    Inputs: {"images": ["3", 0]}
+  Node 5: PreviewImage
+    Inputs: {"images": ["3", 2]}
+  Node 6: UniDepthCameraIntrinsics
+    Inputs: {"image_width": 1024, "image_height": 768, "fx": 0, "fy": 0, "cx": 0, "cy": 0, "fov_degrees": 60}
+Generated prompt_id: 5a096527-ca38-4ad3-9081-617485d343f6
+Calling execution.validate_prompt()...
+Validation result: valid=True
+=== Validation PASSED ===
+got prompt
+[comfy-env] Running UniDepthCameraIntrinsics: image_width: 1024, image_height: 768, fx: 0.0, fy: 0.0, cx: 0.0, cy: 0.0, fov_degrees: 60.0
+[VRAM] Before UniDepthCameraIntrinsics: 1271 / 24575 MB
+[SubprocessWorker] call_method: nodes.nodes_camera.UniDepthCameraIntrinsics.EXECUTE_NORMALIZED
+[SubprocessWorker] acquired lock, ensuring started...
+[ComfyUI-UniDepth] Health check: ping (timeout=5.0s)...
+[ComfyUI-UniDepth] Health check: ok
+[SubprocessWorker] worker started/confirmed
+[SubprocessWorker] serializing kwargs to shm...
+[SubprocessWorker] created 0 shm blocks
+[SubprocessWorker] sending request via socket...
+[SubprocessWorker] call_id=5 sending call_method
+[SubprocessWorker] got response: ok
+[comfy-env] [VRAM] Before offload 'UniDepthV2_1' (1349 MB) -> cpu: 1271 / 24575 MB
+[ComfyUI-UniDepth] Health check: ping (timeout=5.0s)...
+[ComfyUI-UniDepth] Health check: ok
+[SubprocessWorker] call_id=6 sending model_to_device
+Model 'UniDepthV2_1' gone from worker (restarted?), treating as offloaded
+[comfy-env] [VRAM] After offload 'UniDepthV2_1' (1349 MB): 1271 / 24575 MB
+[comfy-env] UniDepthCameraIntrinsics done (0.26s): result: NodeOutput
+[VRAM] After UniDepthCameraIntrinsics: 1271 / 24575 MB
+[comfy-env] Running UniDepthLoader: model_name: 'unidepth-v2-vitl14', dtype: 'fp32', resolution_level: 9, interpolation_mode: 'bilinear'
+[VRAM] Before UniDepthLoader: 1271 / 24575 MB
+[SubprocessWorker] call_method: nodes.load_model.UniDepthLoader.EXECUTE_NORMALIZED
+[SubprocessWorker] acquired lock, ensuring started...
+[ComfyUI-UniDepth] Health check: ping (timeout=5.0s)...
+[ComfyUI-UniDepth] Health check: ok
+[SubprocessWorker] worker started/confirmed
+[SubprocessWorker] serializing kwargs to shm...
+[SubprocessWorker] created 0 shm blocks
+[SubprocessWorker] sending request via socket...
+[SubprocessWorker] call_id=7 sending call_method
+C:\Users\ContainerUser\AppData\Local\Programs\comfy-env\.pixi\envs\unidepth-nodes\Lib\site-packages\timm\models\layers\__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[worker:ComfyUI-UniDepth] Cannot import NystromAttention, you can not run original UniDepth. UniDepthV2 is available.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[worker:ComfyUI-UniDepth] WARNING: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[worker:ComfyUI-UniDepth] WARNING: xFormers not available
+[worker:ComfyUI-UniDepth] WARNING: xFormers not available
+[worker:ComfyUI-UniDepth] Not loading pretrained weights for backbone
+[SubprocessWorker] got response: ok
+[comfy-env] UniDepthLoader done (10.09s): result: NodeOutput
+[VRAM] After UniDepthLoader: 1271 / 24575 MB
+[comfy-env] Running UniDepthInfer: depth_vmin: 0.01, depth_vmax: 10.0, preview_cmap: 'magma_r', unidepth_model: dict, images: torch.float32 [1,480,640,3] cpu, intrinsics: dict
+[VRAM] Before UniDepthInfer: 1271 / 24575 MB
+[SubprocessWorker] call_method: nodes.nodes_inference.UniDepthInfer.EXECUTE_NORMALIZED
+[SubprocessWorker] acquired lock, ensuring started...
+[ComfyUI-UniDepth] Health check: ping (timeout=5.0s)...
+[ComfyUI-UniDepth] Health check: ok
+[SubprocessWorker] worker started/confirmed
+[comfy-env] PRE-SERIALIZE 'images' shape: torch.Size([1, 480, 640, 3])
+[SubprocessWorker] serializing kwargs to shm...
+[SubprocessWorker] created 0 shm blocks
+[SubprocessWorker] sending request via socket...
+[SubprocessWorker] call_id=8 sending call_method
+[worker:ComfyUI-UniDepth] [comfy-env] _from_shm got dict with keys: ['__type__', 'strategy', 'manager_path', 'storage_key', 'storage_size']
+[worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZE TensorRef: tensor_size=[1, 480, 640, 3]
+[worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZED tensor shape: torch.Size([1, 480, 640, 3])
+[worker:ComfyUI-UniDepth] [comfy-env] _from_shm got dict with keys: ['__type__', 'strategy', 'manager_path', 'storage_key', 'storage_size']
+[worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZE TensorRef: tensor_size=[3, 3]
+[worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZED tensor shape: torch.Size([3, 3])
+[worker:ComfyUI-UniDepth] [VRAM] +322MB (now 322MB) reserved=352MB peak=322MB
+[worker:ComfyUI-UniDepth] [VRAM] +1062MB (now 1385MB) reserved=1408MB peak=1385MB
+[SubprocessWorker] callback 'report_progress' from call_id=8
+[SubprocessWorker] got response: ok
+[comfy-env] Created 1 model patchers: ['UniDepthV2_1']
+[comfy-env] UniDepthInfer done (2.32s): result: NodeOutput
+[VRAM] After UniDepthInfer: 1271 / 24575 MB
+[VRAM] Loaded: SubprocessModel (1349 MB)
+Prompt executed in 12.79 seconds
+[comfy-env] [VRAM] Before offload 'UniDepthV2_1' (1349 MB) -> cpu: 1271 / 24575 MB
+[ComfyUI-UniDepth] Health check: ping (timeout=5.0s)...
+[ComfyUI-UniDepth] Health check: ok
+[SubprocessWorker] call_id=9 sending model_to_device
+[worker:ComfyUI-UniDepth] [VRAM] -205MB (now 1180MB) reserved=2656MB peak=1919MB
+[comfy-env] [VRAM] After offload 'UniDepthV2_1' (1349 MB): 1271 / 24575 MB
