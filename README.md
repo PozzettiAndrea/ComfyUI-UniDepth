@@ -1,3 +1,6 @@
+> [!WARNING]
+> Warning, uses experimental package `comfy-env` to attempt a one click isolated install. Will download and use pixi package manager.
+
 # ComfyUI-UniDepth
 
 ComfyUI nodes for [**UniDepthV2**](https://github.com/lpiccinelli-eth/UniDepth) — universal **monocular metric depth** estimation by Piccinelli et al. (ETH Zürich, CVPR 2024 + 2025 follow-up).

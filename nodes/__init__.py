@@ -3,11 +3,15 @@
 import os
 import sys
 
-# Vendored upstream package uses absolute imports like `from unidepth.models...`.
-# Put the directory containing the vendored `unidepth/` on sys.path so those work.
+# Vendored upstream package lives under `nodes/site-packages/unidepth/`.
+# The `site-packages` directory name is recognised by `comfy-test`'s syntax
+# linter as third-party code and therefore not checked against ComfyUI-native
+# conventions (raw `nn.Linear`/`nn.Conv2d` etc.). It also matches the standard
+# Python intuition: "this is vendored, not authored here".
 _NODES_DIR = os.path.dirname(os.path.abspath(__file__))
-if _NODES_DIR not in sys.path:
-    sys.path.insert(0, _NODES_DIR)
+_VENDOR_DIR = os.path.join(_NODES_DIR, "site-packages")
+if _VENDOR_DIR not in sys.path:
+    sys.path.insert(0, _VENDOR_DIR)
 
 from .load_model import UniDepthLoader
 from .nodes_inference import UniDepthInfer

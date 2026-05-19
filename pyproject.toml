@@ -1,6 +1,6 @@
 [project]
 name = "ComfyUI-UniDepth"
-description = "ComfyUI nodes for UniDepthV2 (Piccinelli et al.) — universal monocular metric depth estimation."
+description = "Warning, uses experimental package `comfy-env` to attempt a one click isolated install. Will download and use pixi package manager. ComfyUI nodes for UniDepthV2 (Piccinelli et al.) — universal monocular metric depth estimation."
 version = "0.1.0"
 license = {file = "LICENSE"}
 
