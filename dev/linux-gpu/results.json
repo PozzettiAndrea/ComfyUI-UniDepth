@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-05-18T20:02:51.322027+00:00",
+  "timestamp": "2026-05-19T23:07:35.106570+00:00",
   "platform": "linux",
   "hardware": {
     "os": "Linux-6.8.0-107-generic-x86_64-with-glibc2.35",
     "cpu": "Intel(R) Xeon(R) CPU E5-2697 v4 @ 2.30GHz",
     "gpu": "NVIDIA GeForce RTX 3090"
   },
-  "commit_hash": "5382ce92881c69870983016724caf52f5766a4e9",
-  "run_url": "https://github.com/PozzettiAndrea/comfy-gpu-ci/actions/runs/26054460466",
+  "commit_hash": "d0ffb388bcaa109e22019b4bf65f55fc022a4c55",
+  "run_url": "https://github.com/PozzettiAndrea/comfy-gpu-ci/actions/runs/26126370907",
   "success": true,
   "summary": {
     "total": 2,
@@ -18,7 +18,7 @@
     {
       "name": "simple",
       "status": "pass",
-      "duration_seconds": 41.39,
+      "duration_seconds": 40.1,
       "error": null,
       "hardware": {
         "os": "Linux-6.8.0-107-generic-x86_64-with-glibc2.35",
@@ -27,21 +27,21 @@
       },
       "resources": {
         "ram": {
-          "peak": 4.6,
-          "avg": 2.61
+          "peak": 4.06,
+          "avg": 2.58
         },
         "total_ram_gb": 31.2,
-        "samples": 41,
+        "samples": 39,
         "vram": {
           "peak": 3.99,
-          "avg": 0.84
+          "avg": 0.78
         }
       }
     },
     {
       "name": "with_intrinsics",
       "status": "pass",
-      "duration_seconds": 18.8,
+      "duration_seconds": 18.93,
       "error": null,
       "hardware": {
         "os": "Linux-6.8.0-107-generic-x86_64-with-glibc2.35",
@@ -57,7 +57,7 @@
         "samples": 19,
         "vram": {
           "peak": 4.12,
-          "avg": 0.83
+          "avg": 0.82
         }
       }
     }
