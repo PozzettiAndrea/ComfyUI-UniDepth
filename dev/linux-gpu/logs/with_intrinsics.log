@@ -3,12 +3,12 @@ Capturing execution frames: with_intrinsics.json
   [ComfyUI] [ComfyUI-UniDepth] Health check: ping (timeout=5.0s)...
   [ComfyUI] [ComfyUI-UniDepth] python: /tmp/comfytest-home/.ce/envs/unidepth-nodes/.pixi/envs/default/bin/python
   [ComfyUI] [ComfyUI-UniDepth] Health check: failed
-  [ComfyUI] [ComfyUI-UniDepth] sys_path sent to worker: ['/workspaces/UniDepth-2302/ComfyUI', '/workspaces/UniDepth-2302/ComfyUI/custom_nodes/ComfyUI-UniDepth', '/tmp/comfytest-home/.ce/envs/unidepth-nodes/.pixi/envs/default/lib/python3.1/site-packages', '/workspaces/UniDepth-2302/ComfyUI/custom_nodes/ComfyUI-UniDepth']
+  [ComfyUI] [ComfyUI-UniDepth] sys_path sent to worker: ['/workspaces/UniDepth-0132/ComfyUI', '/workspaces/UniDepth-0132/ComfyUI/custom_nodes/ComfyUI-UniDepth', '/tmp/comfytest-home/.ce/envs/unidepth-nodes/.pixi/envs/default/lib/python3.13/site-packages', '/workspaces/UniDepth-0132/ComfyUI/custom_nodes/ComfyUI-UniDepth']
   [ComfyUI] [ComfyUI-UniDepth] Socket unhealthy, restarting worker...
   [ComfyUI] [SubprocessWorker] is_pixi=True, python=/tmp/comfytest-home/.ce/envs/unidepth-nodes/.pixi/envs/default/bin/python
   [ComfyUI] [comfy-env] Invalidated 1 stale model patchers (will be cleaned up during next unload)
-  [ComfyUI] [SubprocessWorker] launching cmd=['/tmp/comfytest-home/.pixi/bin/pixi', 'run', '--as-is', '--manifest-path', '/tmp/comfytest-home/.ce/envs/unidepth-nodes/pixi.toml', '-e', 'default', 'python', '/tmp/comfyui_pvenv_rpp63umc/persistent_worker.py', 'abstract://comfy_worker_f64681fdcd0e']...
-  [ComfyUI] [SubprocessWorker] socket_addr=abstract://comfy_worker_f64681fdcd0e (abstract, no filesystem path)
+  [ComfyUI] [SubprocessWorker] launching cmd=['/tmp/comfytest-home/.pixi/bin/pixi', 'run', '--as-is', '--manifest-path', '/tmp/comfytest-home/.ce/envs/unidepth-nodes/pixi.toml', '-e', 'default', 'python', '/tmp/comfyui_pvenv_9q93bw_x/persistent_worker.py', 'abstract://comfy_worker_697e3a09ed4f']...
+  [ComfyUI] [SubprocessWorker] socket_addr=abstract://comfy_worker_697e3a09ed4f (abstract, no filesystem path)
   [ComfyUI] [worker:ComfyUI-UniDepth] ERROR: Failed to import comfy_kitchen, Error: No module named 'comfy_kitchen', fp8 and fp4 support will not be available.
   [ComfyUI] [SubprocessWorker] call_id=4 sending model_to_device
   [ComfyUI] Model 'UniDepthV2_1' gone from worker (restarted?), treating as offloaded
@@ -31,7 +31,7 @@ Capturing execution frames: with_intrinsics.json
   [ComfyUI]     Inputs: {"images": ["3", 2]}
   [ComfyUI]   Node 6: UniDepthCameraIntrinsics
   [ComfyUI]     Inputs: {"image_width": 1024, "image_height": 768, "fx": 0, "fy": 0, "cx": 0, "cy": 0, "fov_degrees": 60}
-  [ComfyUI] Generated prompt_id: 2c4389cd-cf6d-416a-a044-3bfc5d797f9e
+  [ComfyUI] Generated prompt_id: f533fdfe-eedb-4a90-aca3-4bf990ff37ca
   [ComfyUI] Calling execution.validate_prompt()...
   [ComfyUI] Validation result: valid=True
   [ComfyUI] === Validation PASSED ===
@@ -54,7 +54,7 @@ Capturing execution frames: with_intrinsics.json
   [ComfyUI] [SubprocessWorker] call_id=6 sending model_to_device
   [ComfyUI] Model 'UniDepthV2_1' gone from worker (restarted?), treating as offloaded
   [ComfyUI] [comfy-env] [VRAM] After offload 'UniDepthV2_1' (1349 MB): 1087 / 24124 MB
-  [ComfyUI] [comfy-env] UniDepthCameraIntrinsics done (0.30s): result: NodeOutput
+  [ComfyUI] [comfy-env] UniDepthCameraIntrinsics done (0.37s): result: NodeOutput
   [ComfyUI] [VRAM] After UniDepthCameraIntrinsics: 1087 / 24124 MB
   [ComfyUI] [comfy-env] Running UniDepthLoader: model_name: 'unidepth-v2-vitl14', dtype: 'fp32', resolution_level: 9, interpolation_mode: 'bilinear'
   [ComfyUI] [VRAM] Before UniDepthLoader: 1087 / 24124 MB
@@ -67,21 +67,19 @@ Capturing execution frames: with_intrinsics.json
   [ComfyUI] [SubprocessWorker] created 0 shm blocks
   [ComfyUI] [SubprocessWorker] sending request via socket...
   [ComfyUI] [SubprocessWorker] call_id=7 sending call_method
-  [ComfyUI] /tmp/comfytest-home/.ce/envs/unidepth-nodes/.pixi/envs/default/lib/python3.1/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  [ComfyUI] /tmp/comfytest-home/.ce/envs/unidepth-nodes/.pixi/envs/default/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
   [ComfyUI]   warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
   Frame 2 saved (frame_001.jpg, t=2.5s)
-  [capture-periodic] freeze=3ms shot=211ms unfreeze=3ms saved=True
   [ComfyUI] [worker:ComfyUI-UniDepth] Cannot import NystromAttention, you can not run original UniDepth. UniDepthV2 is available.
-  [ComfyUI] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-  [ComfyUI] [worker:ComfyUI-UniDepth] WARNING: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  [capture-periodic] freeze=2ms shot=161ms unfreeze=13ms saved=True
   [ComfyUI] [worker:ComfyUI-UniDepth] WARNING: xFormers not available
   [ComfyUI] [worker:ComfyUI-UniDepth] WARNING: xFormers not available
   Frame 3 saved (frame_002.jpg, t=4.8s)
-  [capture-periodic] freeze=3ms shot=220ms unfreeze=9ms saved=True
-  [capture-loop] iter=50 t=6.3s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=6.2/31.2GB (20%) swap=4.0/32.0GB (13%) cpu=6% browser_rss=0.88GB
+  [capture-periodic] freeze=3ms shot=228ms unfreeze=6ms saved=True
+  [capture-loop] iter=50 t=6.3s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=6.3/31.2GB (20%) swap=4.0/32.0GB (12%) cpu=6% browser_rss=0.87GB
   [ComfyUI] [worker:ComfyUI-UniDepth] Not loading pretrained weights for backbone
   [ComfyUI] [SubprocessWorker] got response: ok
-  [ComfyUI] [comfy-env] UniDepthLoader done (8.10s): result: NodeOutput
+  [ComfyUI] [comfy-env] UniDepthLoader done (7.86s): result: NodeOutput
   [ComfyUI] [VRAM] After UniDepthLoader: 1087 / 24124 MB
   [ComfyUI] [comfy-env] Running UniDepthInfer: depth_vmin: 0.01, depth_vmax: 10.0, preview_cmap: 'magma_r', unidepth_model: dict, images: torch.float32 [1,480,640,3] cpu, intrinsics: dict
   [ComfyUI] [VRAM] Before UniDepthInfer: 1087 / 24124 MB
@@ -101,29 +99,28 @@ Capturing execution frames: with_intrinsics.json
   [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] _from_shm got dict with keys: ['__type__', 'strategy', 'parent_pid', 'fd', 'storage_size']
   [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZE TensorRef: tensor_size=[3, 3]
   [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZED tensor shape: torch.Size([3, 3])
-  [ComfyUI] [worker:ComfyUI-UniDepth] [VRAM] +418MB (now 418MB) reserved=448MB peak=418MB
+  [ComfyUI] [worker:ComfyUI-UniDepth] [VRAM] +482MB (now 482MB) reserved=512MB peak=482MB
   Frame 4 saved (frame_003.jpg, t=9.4s)
-  [capture-periodic] freeze=3ms shot=218ms unfreeze=4ms saved=True
-  [ComfyUI] [worker:ComfyUI-UniDepth] [VRAM] +1984MB (now 2403MB) reserved=2688MB peak=2403MB
+  [capture-periodic] freeze=3ms shot=220ms unfreeze=3ms saved=True
+  [ComfyUI] [worker:ComfyUI-UniDepth] [VRAM] +1990MB (now 2473MB) reserved=2816MB peak=2473MB
   [ComfyUI] [SubprocessWorker] callback 'report_progress' from call_id=8
   [ComfyUI] [SubprocessWorker] got response: ok
   [ComfyUI] [comfy-env] Created 1 model patchers: ['UniDepthV2_1']
-  [ComfyUI] [comfy-env] UniDepthInfer done (1.42s): result: NodeOutput
-  [ComfyUI] [VRAM] After UniDepthInfer: 4791 / 24124 MB
+  [ComfyUI] [comfy-env] UniDepthInfer done (1.39s): result: NodeOutput
+  [ComfyUI] [VRAM] After UniDepthInfer: 4727 / 24124 MB
   [ComfyUI] [VRAM] Loaded: SubprocessModel (1349 MB)
-  [ComfyUI] Prompt executed in 9.97 seconds
-  [ComfyUI] [comfy-env] [VRAM] Before offload 'UniDepthV2_1' (1349 MB) -> cpu: 4791 / 24124 MB
+  [ComfyUI] Prompt executed in 9.71 seconds
+  [ComfyUI] [comfy-env] [VRAM] Before offload 'UniDepthV2_1' (1349 MB) -> cpu: 4727 / 24124 MB
   [ComfyUI] [ComfyUI-UniDepth] Health check: ping (timeout=5.0s)...
   [ComfyUI] [ComfyUI-UniDepth] Health check: ok
   [ComfyUI] [SubprocessWorker] call_id=9 sending model_to_device
   Node executed (2 total), capturing...
-  Frame 5 saved (frame_004.jpg, t=10.5s)
-  [capture-node] freeze=3ms shot=235ms unfreeze=0ms saved=True
-  Execution complete (t=10.5s)
-  Captured 5 unique frames over 10.84s
+  Frame 5 saved (frame_004.jpg, t=10.3s)
+  [capture-node] freeze=4ms shot=231ms unfreeze=0ms saved=True
+  Execution complete (t=10.3s)
+  Captured 5 unique frames over 10.6s
   [debug] iframes: 0
   [timing] trigger_3d_previews: 0.0s
-  [ComfyUI] [worker:ComfyUI-UniDepth] [VRAM] -2169MB (now 235MB) reserved=3584MB peak=2403MB
   [ComfyUI] [comfy-env] [VRAM] After offload 'UniDepthV2_1' (1349 MB): 1271 / 24124 MB
   Saved high-quality screenshot: with_intrinsics_executed.png
   [timing] final_screenshot: 0.5s
