@@ -1,4 +1,4 @@
-[00:00] Crash dump logging enabled: D:\a\comfy-gpu-ci\comfy-gpu-ci\comfy-test-logs\UniDepth-1944\dev\windows-portable-cpu\crash_dump.log
+[00:00] Crash dump logging enabled: D:\a\comfy-gpu-ci\comfy-gpu-ci\comfy-test-logs\UniDepth-1924\dev\windows-portable-cpu\crash_dump.log
 [00:00] 
 [00:00] [1/5] SYNTAX
 [00:00] ----------------------------------------
@@ -17,144 +17,314 @@
 [00:00] 
 Setting up ComfyUI...
 [00:00] Fetching latest release version...
-[00:00] Latest version: v0.21.1
-[00:00] Downloading portable ComfyUI from https://github.com/comfyanonymous/ComfyUI/releases/download/v0.21.1/ComfyUI_windows_portable_nvidia.7z...
-[00:02]   Downloaded: 10%
-[00:03]   Downloaded: 20%
-[00:04]   Downloaded: 30%
-[00:05]   Downloaded: 40%
-[00:06]   Downloaded: 50%
+[00:00] Latest version: v0.22.0
+[00:00] Downloading portable ComfyUI from https://github.com/comfyanonymous/ComfyUI/releases/download/v0.22.0/ComfyUI_windows_portable_nvidia.7z...
+[00:01]   Downloaded: 10%
+[00:02]   Downloaded: 20%
+[00:03]   Downloaded: 30%
+[00:04]   Downloaded: 40%
+[00:05]   Downloaded: 50%
 [00:07]   Downloaded: 60%
-[00:08]   Downloaded: 70%
-[00:09]   Downloaded: 80%
-[00:10]   Downloaded: 90%
-[00:12]   Downloaded: 100%
-[00:12] Downloaded to C:\Users\stduser\.comfy-test\cache\portable\ComfyUI_portable_v0.21.1.7z
-[00:12] Extracting to cache: C:\Users\stduser\.comfy-test\cache\portable\ComfyUI_portable_v0.21.1
-[00:12] Extracting ComfyUI_portable_v0.21.1.7z...
-[00:12] Using 7z: 7z
-[02:21] Extracted to C:\Users\stduser\.comfy-test\cache\portable\ComfyUI_portable_v0.21.1
-[02:21] Copying from cache to: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui
-[04:08] Installing uv into embedded Python...
-[04:08] Running: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\python_embeded\python.exe -m pip install uv
-[04:12] Installing ComfyUI requirements...
-[04:12] Running: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\python_embeded\python.exe -m uv pip install -r D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\ComfyUI\requirements.txt
-[04:12] 
+[00:07]   Downloaded: 70%
+[00:08]   Downloaded: 80%
+[00:09]   Downloaded: 90%
+[00:10]   Downloaded: 100%
+[00:10] Downloaded to C:\Users\stduser\.comfy-test\cache\portable\ComfyUI_portable_v0.22.0.7z
+[00:10] Extracting to cache: C:\Users\stduser\.comfy-test\cache\portable\ComfyUI_portable_v0.22.0
+[00:10] Extracting ComfyUI_portable_v0.22.0.7z...
+[00:11] Using 7z: 7z
+[02:13] Extracted to C:\Users\stduser\.comfy-test\cache\portable\ComfyUI_portable_v0.22.0
+[02:13] Copying from cache to: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui
+[02:38] Installing uv into embedded Python...
+[02:38] Running: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\python_embeded\python.exe -m pip install uv
+[02:41] Installing ComfyUI requirements...
+[02:41] Running: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\python_embeded\python.exe -m uv pip install -r D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\ComfyUI\requirements.txt
+[02:41] 
 Installing custom node...
-[04:12] Copying ComfyUI-UniDepth to custom_nodes/...
-[04:12] Installing node requirements...
-[04:12] Running: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\python_embeded\python.exe -m pip install -r D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth\requirements.txt
-[04:15] 
+[02:41] Copying ComfyUI-UniDepth to custom_nodes/...
+[02:41] Installing node requirements...
+[02:41] Running: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\python_embeded\python.exe -m pip install -r D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth\requirements.txt
+[02:45] 
 Running install.py...
-[04:15] Running: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\python_embeded\python.exe D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth\install.py
-[04:17]   [comfy-env] _discover: scanning D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes
-[04:17]   [comfy-env] _discover: ComfyUI-UniDepth -> unidepth-nodes (custom_nodes\ComfyUI-UniDepth\nodes\comfy-env.toml)
-[04:17]   [comfy-env] Workspace: C:\Users\stduser\AppData\Local\Programs\comfy-env
-[04:17]   [comfy-env] ComfyUI: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\ComfyUI
-[04:17]   [comfy-env] Found 1 node config(s):
-[04:17]     - unidepth-nodes <- custom_nodes\ComfyUI-UniDepth\nodes\comfy-env.toml (python=host)
-[04:18]   [comfy-env] Bootstrap interpreter has python 3.13 + torch 2.11.0 (cu130). Looking for cuda-only wheels matching cu130/torch2.11/cp313.
-[04:19]   [comfy-env] GPU: No GPU detected
-[04:19]   [comfy-env] Comfyui feature -> torch 2.11.0 from https://download.pytorch.org/whl/cu130 (CUDA 13.0 via bootstrap torch)
-[04:19]   Generated C:\Users\stduser\AppData\Local\Programs\comfy-env\pixi.toml
-[04:19]   [comfy-env] Installing 1 environment(s):
-[04:19]     - unidepth-nodes (python=host, 10 pypi deps)
-[04:19]   [comfy-env] Running `pixi install -e unidepth-nodes`...
-[04:43]      WARN Skipped running the post-link scripts because `run-post-link-scripts` = `false`
-[04:43]     	- Scripts/.librsvg-pre-unlink.bat
-[04:43]     To enable them, run:
-[04:43]     	pixi config set --local run-post-link-scripts insecure
-[04:43]     More info:
-[04:43]     	https://pixi.sh/latest/reference/pixi_configuration/#run-post-link-scripts
-[05:38]     The unidepth-nodes environment has been installed.
-[05:38]   [comfy-env] Recorded install hash 3060afebfaed -> C:\Users\stduser\AppData\Local\Programs\comfy-env\install.hash
-[05:38]   [comfy-env] Install log: C:\Users\stduser\AppData\Local\Programs\comfy-env\install.log
-[05:38]   
-[05:38]   Installation complete!
-[05:38] Installing validation endpoint...
-[05:38]   Cloning PozzettiAndrea/ComfyUI-validate-endpoint...
-[05:38] Running: git clone --depth 1 https://x-access-token:***@github.com/PozzettiAndrea/ComfyUI-validate-endpoint.git D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-validate-endpoint
-[05:40] [INSTALL] PASSED
-[05:40] 
-[05:40] [3/5] REGISTRATION
-[05:40] ----------------------------------------
-[05:40] 
+[02:45] Running: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\python_embeded\python.exe D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth\install.py
+[02:47]   [comfy-env] _discover: scanning D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes
+[02:47]   [comfy-env] _discover: ComfyUI-UniDepth -> unidepth-nodes (custom_nodes\ComfyUI-UniDepth\nodes\comfy-env.toml)
+[02:47]   [comfy-env] Workspace: C:\Users\stduser\AppData\Local\Programs\comfy-env
+[02:47]   [comfy-env] ComfyUI: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\ComfyUI
+[02:47]   [comfy-env] Found 1 node config(s):
+[02:47]     - unidepth-nodes <- custom_nodes\ComfyUI-UniDepth\nodes\comfy-env.toml (python=host)
+[02:48]   [comfy-env] Bootstrap interpreter has python 3.13 + torch 2.11.0 (cu130). Looking for cuda-only wheels matching cu130/torch2.11/cp313.
+[02:50]   [comfy-env] GPU: No GPU detected
+[02:50]   [comfy-env] Comfyui feature -> torch 2.11.0 from https://download.pytorch.org/whl/cu130 (CUDA 13.0 via bootstrap torch)
+[02:50]   [comfy-env] Writing 1 per-env manifest(s):
+[02:50]     - unidepth-nodes: C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\pixi.toml
+[02:50]   [comfy-env] Installing 1 environment(s):
+[02:50]     - unidepth-nodes (python=host, 10 pypi deps)
+[02:50]   [comfy-env] Running `pixi install --manifest-path C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\pixi.toml` ...
+[03:10]      WARN Skipped running the post-link scripts because `run-post-link-scripts` = `false`
+[03:10]     	- Scripts/.librsvg-pre-unlink.bat
+[03:10]     To enable them, run:
+[03:10]     	pixi config set --local run-post-link-scripts insecure
+[03:10]     More info:
+[03:10]     	https://pixi.sh/latest/reference/pixi_configuration/#run-post-link-scripts
+[04:25]     The default environment has been installed.
+[04:25]   [comfy-env] Recorded install hash 9ecb2ad617fd -> C:\Users\stduser\AppData\Local\Programs\comfy-env\install.hash
+[04:25]   [comfy-env] Install log: C:\Users\stduser\AppData\Local\Programs\comfy-env\install.log
+[04:25]   
+[04:25]   Installation complete!
+[04:25] Installing validation endpoint...
+[04:25]   Cloning PozzettiAndrea/ComfyUI-validate-endpoint...
+[04:25] Running: git clone --depth 1 https://x-access-token:***@github.com/PozzettiAndrea/ComfyUI-validate-endpoint.git D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-validate-endpoint
+[04:26] [INSTALL] PASSED
+[04:26] 
+[04:26] [3/5] REGISTRATION
+[04:26] ----------------------------------------
+[04:26] 
 [DEBUG] server=None, api=None
-[05:40] 
+[04:26] 
 Starting ComfyUI server...
-[05:40] Starting ComfyUI server on port 41880...
-[05:40] Starting ComfyUI server on port 41880...
-[05:40] Server stdout/stderr -> D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1944\server.log
-[05:40]   [ComfyUI:stdout] reader thread died: AttributeError("'NoneType' object has no attribute 'readline'")
-[05:40] Waiting for server to be ready (timeout: 600s)...
-[05:40]   [ComfyUI:stderr] reader thread died: AttributeError("'NoneType' object has no attribute 'readline'")
-[06:02] Server responding, waiting for nodes to load...
-[06:22] Server is ready!
-[06:22] Checking for import errors in server logs...
-[06:22] No import errors detected
-[06:22] Found 720 registered nodes
-[06:22] [REGISTRATION] PASSED
-[06:22] 
-[06:22] [4/5] INSTANTIATION
-[06:22] ----------------------------------------
-[06:22] 
-[DEBUG] server=<comfy_test.comfyui.server.ComfyUIServer object at 0x00000247FDFF1790>, api=<comfy_test.comfyui.api.ComfyUIAPI object at 0x00000247FDFF2720>
-[06:22] Testing node constructors...
-[06:25] All 5 node(s) instantiated successfully!
-[06:25] [INSTANTIATION] PASSED
-[06:25] 
-[06:25] [5/5] EXECUTION
-[06:25] ----------------------------------------
-[06:25] 
-[DEBUG] server=<comfy_test.comfyui.server.ComfyUIServer object at 0x00000247FDFF1790>, api=<comfy_test.comfyui.api.ComfyUIAPI object at 0x00000247FDFF2720>
-[06:25] CPU runner - will execute 1 workflow(s)
-[06:25] Running 2 workflow(s) (all with videos)...
-[06:25] Installing screenshot dependencies (playwright, pillow)...
-[06:27]   Packages installed, downloading chromium browser...
-[06:40]   Screenshot dependencies installed successfully
-[06:41] Starting headless browser...
-[06:41]   Downloading Mesa llvmpipe for Windows...
-[06:45]   Copied opengl32.dll to Chromium dir
-[06:45]   Copied libgallium_wgl.dll to Chromium dir
-[06:46]   Using Mesa llvmpipe (desktop GL) -- multithreaded CPU rendering
-[06:46] Capturing execution frames: simple.json
-[06:55]   Frame 1 saved (frame_000.jpg, t=0.0s)
-[06:55]   Validating workflow...
-[06:55]   Queuing workflow for execution...
-[06:57]   Frame 2 saved (frame_001.jpg, t=2.3s)
-[06:57]   [capture-periodic] freeze=3ms shot=123ms unfreeze=4ms saved=True
-[06:59]   Frame 3 saved (frame_002.jpg, t=4.5s)
-[06:59]   [capture-periodic] freeze=4ms shot=128ms unfreeze=7ms saved=True
-[07:01]   [capture-loop] iter=50 t=5.9s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=5.5/16.0GB (34%) swap=0.2/2.9GB (8%) cpu=34% browser_rss=0.67GB
-[07:07]   [capture-loop] iter=100 t=11.9s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=5.5/16.0GB (34%) swap=0.2/2.9GB (8%) cpu=28% browser_rss=0.67GB
-[07:12]   [capture-loop] iter=150 t=17.5s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=5.6/16.0GB (35%) swap=0.2/2.9GB (8%) cpu=31% browser_rss=0.67GB
-[07:18]   [capture-loop] iter=200 t=23.3s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=6.6/16.0GB (42%) swap=0.2/2.9GB (8%) cpu=40% browser_rss=0.61GB
-[07:24]   [capture-loop] iter=250 t=29.5s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=5 ram=7.5/16.0GB (47%) swap=0.2/2.9GB (8%) cpu=60% browser_rss=0.60GB
-[07:28]   Frame 4 saved (frame_003.jpg, t=33.1s)
-[07:28]   [capture-periodic] freeze=4ms shot=151ms unfreeze=5ms saved=True
-[07:30]   [capture-loop] iter=300 t=35.2s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=5 ram=7.1/16.0GB (44%) swap=0.4/2.9GB (13%) cpu=52% browser_rss=0.60GB
-[07:36]   [capture-loop] iter=350 t=41.1s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=7.0/16.0GB (44%) swap=0.4/2.9GB (13%) cpu=61% browser_rss=0.60GB
-[07:42]   [capture-loop] iter=400 t=47.0s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=5 ram=7.0/16.0GB (44%) swap=0.4/2.9GB (13%) cpu=60% browser_rss=0.60GB
-[07:47]   [capture-loop] iter=450 t=52.7s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=5 ram=7.0/16.0GB (44%) swap=0.4/2.9GB (13%) cpu=61% browser_rss=0.60GB
-[07:53]   [capture-loop] iter=500 t=58.6s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=5 ram=7.1/16.0GB (44%) swap=0.4/2.9GB (13%) cpu=59% browser_rss=0.57GB
-[07:59]   [capture-loop] iter=550 t=64.5s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=7.3/16.0GB (46%) swap=0.4/2.9GB (13%) cpu=65% browser_rss=0.57GB
-[08:02]   Node executed (1 total), capturing...
-[08:02]   Frame 5 saved (frame_004.jpg, t=67.6s)
-[08:02]   [capture-node] freeze=4ms shot=143ms unfreeze=4ms saved=True
-[08:03]   Node executed (2 total), capturing...
-[08:03]   Frame 6 saved (frame_005.jpg, t=68.1s)
-[08:03]   [capture-node] freeze=4ms shot=115ms unfreeze=0ms saved=True
-[08:03]   Execution complete (t=68.1s)
-[08:03]   Captured 6 unique frames over 68.21s
-[08:03]   [debug] iframes: 0
-[08:03]   [timing] trigger_3d_previews: 0.0s
-[08:05]   Saved high-quality screenshot: simple_executed.png
-[08:05]   [timing] final_screenshot: 0.3s
-[08:06]   [2/2] SKIPPED (not in cpu list) with_intrinsics.json
-[08:06] Results saved to D:\a\comfy-gpu-ci\comfy-gpu-ci\comfy-test-logs\UniDepth-1944\dev\windows-portable-cpu\results.json
-[08:06] Model report: 12 files, 1.3 GB -> D:\a\comfy-gpu-ci\comfy-gpu-ci\comfy-test-logs\UniDepth-1944\dev\windows-portable-cpu\models.json
-[08:06] Saved: D:\a\comfy-gpu-ci\comfy-gpu-ci\comfy-test-logs\UniDepth-1944\dev\windows-portable-cpu\index.html
-[08:06] [EXECUTION] PASSED
-[08:06] 
+[04:26] Starting ComfyUI server on port 41881...
+[04:26] Starting ComfyUI server on port 41881...
+[04:26] Server stdout/stderr -> D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\server.log
+[04:26] Waiting for server to be ready (timeout: 600s)...
+[04:27]   [ComfyUI] setup plugin alembic.autogenerate.schemas
+[04:27]   [ComfyUI] setup plugin alembic.autogenerate.tables
+[04:27]   [ComfyUI] setup plugin alembic.autogenerate.types
+[04:27]   [ComfyUI] setup plugin alembic.autogenerate.constraints
+[04:27]   [ComfyUI] setup plugin alembic.autogenerate.defaults
+[04:27]   [ComfyUI] setup plugin alembic.autogenerate.comments
+[04:27]   [ComfyUI] [comfy-env] ComfyUI-UniDepth: 1 isolation env(s):
+[04:27]   [ComfyUI] [comfy-env]   nodes -> D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth\nodes
+[04:27]   [ComfyUI] [comfy-env] Workspace: C:\Users\stduser\AppData\Local\Programs\comfy-env
+[04:27]   [ComfyUI] [comfy-env]     env: C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\.pixi\envs\default  [OK]
+[04:27]   [ComfyUI] [comfy-env] prestartup complete
+[04:27]   [ComfyUI] 
+[04:27]   [ComfyUI] Prestartup times for custom nodes:
+[04:27]   [ComfyUI]    0.2 seconds: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth
+[04:27]   [ComfyUI] 
+[04:29]   [ComfyUI] D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\torch\cuda\__init__.py:180: UserWarning: cudaGetDeviceCount() returned cudaErrorNotSupported, likely using older driver or on CPU machine (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10\cuda\CUDAFunctions.cpp:88.)
+[04:29]   [ComfyUI]   return torch._C._cuda_getDeviceCount() > 0
+[04:30]   [ComfyUI] Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'dequantize_mxfp8', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'scaled_mm_mxfp8', 'scaled_mm_nvfp4']}
+[04:30]   [ComfyUI] Found comfy_kitchen backend triton: {'available': False, 'disabled': True, 'unavailable_reason': "ImportError: No module named 'triton'", 'capabilities': []}
+[04:30]   [ComfyUI] Found comfy_kitchen backend cuda: {'available': False, 'disabled': False, 'unavailable_reason': 'CUDA not available on this system', 'capabilities': []}
+[04:30]   [ComfyUI] Checkpoint files will always be loaded safely.
+[04:30]   [ComfyUI] Total VRAM 16379 MB, total RAM 16379 MB
+[04:30]   [ComfyUI] pytorch version: 2.11.0+cu130
+[04:30]   [ComfyUI] Set vram state to: DISABLED
+[04:30]   [ComfyUI] Device: cpu
+[04:30]   [ComfyUI] Using sub quadratic optimization for attention, if you have memory or speed issues try using: --use-split-cross-attention
+[04:34]   [ComfyUI] Python version: 3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]
+[04:34]   [ComfyUI] ComfyUI version: 0.22.0
+[04:34]   [ComfyUI] comfy-aimdo version: 0.3.0
+[04:34]   [ComfyUI] comfy-kitchen version: 0.2.8
+[04:34]   [ComfyUI] ****** User settings have been changed to be stored on the server instead of browser storage. ******
+[04:34]   [ComfyUI] ****** For multi-user setups add the --multi-user CLI argument to enable multiple user profiles. ******
+[04:34]   [ComfyUI] comfyui-frontend-package version: 1.43.18
+[04:34]   [ComfyUI] comfyui-workflow-templates version: 0.9.79
+[04:34]   [ComfyUI] comfyui-embedded-docs version: 0.5.0
+[04:34]   [ComfyUI] comfy-kitchen version: 0.2.8
+[04:34]   [ComfyUI] comfy-aimdo version: 0.3.0
+[04:34]   [ComfyUI] [Prompt Server] web root: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\comfyui_frontend_package\static
+[04:34]   [ComfyUI] Asset seeder disabled
+[04:36]   [ComfyUI] [comfy-env] Version: 0.4.1
+[04:37]   [ComfyUI] [comfy-env] register_nodes: ComfyUI-UniDepth
+[04:37]   [ComfyUI] [comfy-env] ComfyUI source dir: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\ComfyUI
+[04:37]   [ComfyUI] [comfy-env] Found 1 isolation env(s)
+[04:37]   [ComfyUI] [comfy-env] Scanning nodes metadata (isolation root)...
+[04:37]   [ComfyUI] [comfy-env] default: Library/bin has 237 DLLs
+[04:37]   [ComfyUI] [comfy-env] Metadata scan: C:\Users\stduser\.pixi\bin\pixi.exe run --as-is --manifest-path C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\pixi.toml -e default python C:\Users\stduser\AppData\Local\Temp\comfy_meta_s09wfn20.py D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth nodes C:\Users\stduser\AppData\Local\Temp\comfy_meta_out_qslv6o3g.pkl
+[04:37]   [ComfyUI] [comfy-env] Scan env PATH for nodes:
+[04:37]   [ComfyUI] [comfy-env]   [0] C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\.pixi\envs\default
+[04:37]   [ComfyUI] [comfy-env]   [1] C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\.pixi\envs\default\Library\bin
+[04:37]   [ComfyUI] [comfy-env]   [2] C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\.pixi\envs\default\Scripts
+[04:37]   [ComfyUI] [comfy-env]   [3] C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\.pixi\envs\default\Lib\site-packages\bpy
+[04:37]   [ComfyUI] [comfy-env]   [4] C:\Windows\System32
+[04:37]   [ComfyUI] [comfy-env]   [5] C:\Windows
+[04:37]   [ComfyUI] [comfy-env]   [6] C:\Windows\System32\Wbem
+[04:45]   [ComfyUI] [comfy-env] Metadata scan stderr for nodes:
+[04:45]   [ComfyUI] [comfy-env]   [meta-scan] importing nodes from D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth
+[04:45]   [ComfyUI] [comfy-env]   ERROR:root:Failed to import comfy_kitchen, Error: No module named 'comfy_kitchen', fp8 and fp4 support will not be available.
+[04:45]   [ComfyUI] [comfy-env]   [meta-scan] import OK
+[04:45]   [ComfyUI] [comfy-env] Scanned nodes: 5 nodes (7.7s)
+[04:45]   [ComfyUI] [comfy-env] Scanned nodes root: 5 nodes (7.7s)
+[04:45]   [ComfyUI] [comfy-env] Imported nodes root: 5 nodes (isolation)
+[04:45]   [ComfyUI] [comfy-env] Registered 5 total nodes
+[04:45]   [ComfyUI] 
+[04:45]   [ComfyUI] Import times for custom nodes:
+[04:45]   [ComfyUI]    0.0 seconds: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\websocket_image_save.py
+[04:45]   [ComfyUI]    0.0 seconds: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-validate-endpoint
+[04:45]   [ComfyUI]    8.3 seconds: D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth
+[04:45]   [ComfyUI] 
+[04:45]   [ComfyUI] Context impl SQLiteImpl.
+[04:45]   [ComfyUI] Will assume non-transactional DDL.
+[04:45]   [ComfyUI] Context impl SQLiteImpl.
+[04:45]   [ComfyUI] Will assume non-transactional DDL.
+[04:45]   [ComfyUI] Running upgrade  -> 0001_assets, Initial assets schema
+[04:45]   [ComfyUI] Revision ID: 0001_assets
+[04:45]   [ComfyUI] Revises: None
+[04:45]   [ComfyUI] Create Date: 2025-12-10 00:00:00
+[04:45]   [ComfyUI] Running upgrade 0001_assets -> 0002_merge_to_asset_references, Merge AssetInfo and AssetCacheState into unified asset_references table.
+[04:45]   [ComfyUI] Running upgrade 0002_merge_to_asset_references -> 0003_add_metadata_job_id, Add system_metadata and job_id columns to asset_references.
+[04:45]   [ComfyUI] Change preview_id FK from assets.id to asset_references.id.
+[04:45]   [ComfyUI] Database upgraded from None to 0003_add_metadata_job_id
+[04:45]   [ComfyUI] Starting server
+[04:45]   [ComfyUI] 
+[04:45]   [ComfyUI] To see the GUI go to: http://127.0.0.1:41881
+[04:45] Server responding, waiting for nodes to load...
+[05:05] Server is ready!
+[05:05] Checking for import errors in server logs...
+[05:05] No import errors detected
+[05:05] Found 728 registered nodes
+[05:05] [REGISTRATION] PASSED
+[05:05] 
+[05:05] [4/5] INSTANTIATION
+[05:05] ----------------------------------------
+[05:05] 
+[DEBUG] server=<comfy_test.comfyui.server.ComfyUIServer object at 0x000001DC52232BC0>, api=<comfy_test.comfyui.api.ComfyUIAPI object at 0x000001DC5225F010>
+[05:06] Testing node constructors...
+[05:10] All 5 node(s) instantiated successfully!
+[05:10] [INSTANTIATION] PASSED
+[05:10] 
+[05:10] [5/5] EXECUTION
+[05:10] ----------------------------------------
+[05:10] 
+[DEBUG] server=<comfy_test.comfyui.server.ComfyUIServer object at 0x000001DC52232BC0>, api=<comfy_test.comfyui.api.ComfyUIAPI object at 0x000001DC5225F010>
+[05:10] CPU runner - will execute 1 workflow(s)
+[05:10] Running 2 workflow(s) (all with videos)...
+[05:10] Installing screenshot dependencies (playwright, pillow)...
+[05:28]   Packages installed, downloading chromium browser...
+[05:45]   Screenshot dependencies installed successfully
+[05:46] Starting headless browser...
+[05:46]   Downloading Mesa llvmpipe for Windows...
+[05:50]   Copied opengl32.dll to Chromium dir
+[05:50]   Copied libgallium_wgl.dll to Chromium dir
+[05:50]   Using Mesa llvmpipe (desktop GL) -- multithreaded CPU rendering
+[05:51] Capturing execution frames: simple.json
+[06:00]   Frame 1 saved (frame_000.jpg, t=0.0s)
+[06:00]   Validating workflow...
+[06:00]   Queuing workflow for execution...
+[06:00]   [ComfyUI] === /validate endpoint called ===
+[06:00]   [ComfyUI] Received JSON with keys: ['prompt']
+[06:00]   [ComfyUI] Prompt has 6 nodes
+[06:00]   [ComfyUI]   Node 1: LoadImage
+[06:00]   [ComfyUI]     Inputs: {"image": "unidepth_demo.png"}
+[06:00]   [ComfyUI]   Node 2: UniDepthLoader
+[06:00]   [ComfyUI]     Inputs: {"model_name": "unidepth-v2-vitl14", "dtype": "fp32", "resolution_level": 9, "interpolation_mode": "bilinear"}
+[06:00]   [ComfyUI]   Node 3: UniDepthInfer
+[06:00]   [ComfyUI]     Inputs: {"depth_vmin": 0.01, "depth_vmax": 10, "preview_cmap": "magma_r", "unidepth_model": ["2", 0], "images": ["1", 0]}
+[06:00]   [ComfyUI]   Node 4: PreviewImage
+[06:00]   [ComfyUI]     Inputs: {"images": ["3", 0]}
+[06:00]   [ComfyUI]   Node 5: PreviewImage
+[06:00]   [ComfyUI]     Inputs: {"images": ["3", 2]}
+[06:00]   [ComfyUI]   Node 6: UniDepthSavePointCloud
+[06:00]   [ComfyUI]     Inputs: {"filename_prefix": "unidepth_points", "batch_index": 0, "points": ["3", 5], "rgb_image": ["1", 0]}
+[06:00]   [ComfyUI] Generated prompt_id: bd419aa7-4e8e-46f3-b96a-717200ee068e
+[06:00]   [ComfyUI] Calling execution.validate_prompt()...
+[06:00]   [ComfyUI] Validation result: valid=True
+[06:00]   [ComfyUI] === Validation PASSED ===
+[06:00]   [ComfyUI] got prompt
+[06:00]   [ComfyUI] [comfy-env] Running UniDepthLoader: model_name: 'unidepth-v2-vitl14', dtype: 'fp32', resolution_level: 9, interpolation_mode: 'bilinear'
+[06:00]   [ComfyUI] [comfy-env] SubprocessWorker: C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\.pixi\envs\default\python.exe
+[06:00]   [ComfyUI] [comfy-env] env_vars: {'COMFYUI_BASE': 'D:\\a\\comfy-gpu-ci\\comfy-gpu-ci\\test_workspaces\\UniDepth-1924\\portable-comfyui\\ComfyUI_windows_portable\\ComfyUI'}
+[06:00]   [ComfyUI] [SubprocessWorker] call_method: nodes.load_model.UniDepthLoader.EXECUTE_NORMALIZED
+[06:00]   [ComfyUI] [SubprocessWorker] acquired lock, ensuring started...
+[06:00]   [ComfyUI] [comfy-env] default: Library/bin has 237 DLLs
+[06:00]   [ComfyUI] [ComfyUI-UniDepth] python: C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\.pixi\envs\default\python.exe
+[06:00]   [ComfyUI] [ComfyUI-UniDepth] sys_path sent to worker: ['D:\\a\\comfy-gpu-ci\\comfy-gpu-ci\\test_workspaces\\UniDepth-1924\\portable-comfyui\\ComfyUI_windows_portable\\ComfyUI', 'D:\\a\\comfy-gpu-ci\\comfy-gpu-ci\\test_workspaces\\UniDepth-1924\\portable-comfyui\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\ComfyUI-UniDepth', 'C:\\Users\\stduser\\AppData\\Local\\Programs\\comfy-env\\envs\\unidepth-nodes\\.pixi\\envs\\default\\Lib\\site-packages', 'D:\\a\\comfy-gpu-ci\\comfy-gpu-ci\\test_workspaces\\UniDepth-1924\\portable-comfyui\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\ComfyUI-UniDepth']
+[06:00]   [ComfyUI] [SubprocessWorker] is_pixi=True, python=C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\.pixi\envs\default\python.exe
+[06:00]   [ComfyUI] [SubprocessWorker] launching cmd=['C:\\Users\\stduser\\.pixi\\bin\\pixi.exe', 'run', '--as-is', '--manifest-path', 'C:\\Users\\stduser\\AppData\\Local\\Programs\\comfy-env\\envs\\unidepth-nodes\\pixi.toml', '-e', 'default', 'python', 'C:\\Users\\stduser\\AppData\\Local\\Temp\\comfyui_pvenv_699au87h\\persistent_worker.py', 'tcp://127.0.0.1:63688']...
+[06:02]   Frame 2 saved (frame_001.jpg, t=3.0s)
+[06:02]   [capture-periodic] freeze=4ms shot=140ms unfreeze=5ms saved=True
+[06:04]   Frame 3 saved (frame_002.jpg, t=5.2s)
+[06:04]   [capture-periodic] freeze=3ms shot=122ms unfreeze=4ms saved=True
+[06:05]   [ComfyUI] C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\.pixi\envs\default\Lib\site-packages\torch\cuda\__init__.py:180: UserWarning: cudaGetDeviceCount() returned cudaErrorNotSupported, likely using older driver or on CPU machine (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10\cuda\CUDAFunctions.cpp:88.)
+[06:05]   [ComfyUI]   return torch._C._cuda_getDeviceCount() > 0
+[06:05]   [ComfyUI] [worker:ComfyUI-UniDepth] ERROR: Failed to import comfy_kitchen, Error: No module named 'comfy_kitchen', fp8 and fp4 support will not be available.
+[06:05]   [ComfyUI] [SubprocessWorker] worker started/confirmed
+[06:05]   [ComfyUI] [SubprocessWorker] serializing kwargs to shm...
+[06:05]   [ComfyUI] [SubprocessWorker] created 0 shm blocks
+[06:05]   [ComfyUI] [SubprocessWorker] sending request via socket...
+[06:05]   [ComfyUI] [SubprocessWorker] call_id=1 sending call_method
+[06:06]   [capture-loop] iter=50 t=6.6s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=6.0/16.0GB (38%) swap=0.3/2.9GB (9%) cpu=42% browser_rss=0.67GB
+[06:12]   [capture-loop] iter=100 t=12.7s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=8 ram=6.1/16.0GB (38%) swap=0.3/2.9GB (9%) cpu=37% browser_rss=0.67GB
+[06:15]   [ComfyUI] C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\.pixi\envs\default\Lib\site-packages\timm\models\layers\__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+[06:15]   [ComfyUI]   warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[06:17]   [ComfyUI] [worker:ComfyUI-UniDepth] Cannot import NystromAttention, you can not run original UniDepth. UniDepthV2 is available.
+[06:17]   [ComfyUI] D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth\nodes\site-packages\unidepth\models\unidepthv2\unidepthv2.py:240: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+[06:17]   [ComfyUI]   @torch.autocast(device_type="cuda", enabled=True, dtype=torch.float16)
+[06:17]   [capture-loop] iter=150 t=18.4s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=3 ram=6.2/16.0GB (39%) swap=0.3/2.9GB (9%) cpu=35% browser_rss=0.67GB
+[06:17]   [ComfyUI] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[06:17]   [ComfyUI] [worker:ComfyUI-UniDepth] WARNING: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[06:17]   [ComfyUI] [worker:ComfyUI-UniDepth] WARNING: xFormers not available
+[06:17]   [ComfyUI] [worker:ComfyUI-UniDepth] WARNING: xFormers not available
+[06:21]   [ComfyUI] [worker:ComfyUI-UniDepth] Not loading pretrained weights for backbone
+[06:23]   [capture-loop] iter=200 t=24.0s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=2 ram=7.3/16.0GB (46%) swap=0.3/2.9GB (9%) cpu=51% browser_rss=0.60GB
+[06:28]   [ComfyUI] [SubprocessWorker] got response: ok
+[06:28]   [ComfyUI] [comfy-env] UniDepthLoader done (28.51s): result: NodeOutput
+[06:28]   [ComfyUI] [comfy-env] Running UniDepthInfer: depth_vmin: 0.01, depth_vmax: 10.0, preview_cmap: 'magma_r', unidepth_model: dict, images: torch.float32 [1,480,640,3] cpu
+[06:28]   [ComfyUI] [SubprocessWorker] call_method: nodes.nodes_inference.UniDepthInfer.EXECUTE_NORMALIZED
+[06:28]   [ComfyUI] [SubprocessWorker] acquired lock, ensuring started...
+[06:28]   [ComfyUI] [ComfyUI-UniDepth] Health check: ping (timeout=5.0s)...
+[06:28]   [ComfyUI] [ComfyUI-UniDepth] Health check: ok
+[06:28]   [ComfyUI] [SubprocessWorker] worker started/confirmed
+[06:28]   [ComfyUI] [comfy-env] PRE-SERIALIZE 'images' shape: torch.Size([1, 480, 640, 3])
+[06:28]   [ComfyUI] [SubprocessWorker] serializing kwargs to shm...
+[06:28]   [ComfyUI] [SubprocessWorker] created 0 shm blocks
+[06:28]   [ComfyUI] [SubprocessWorker] sending request via socket...
+[06:28]   [ComfyUI] [SubprocessWorker] call_id=2 sending call_method
+[06:28]   [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] _from_shm got dict with keys: ['__type__', 'strategy', 'manager_path', 'storage_key', 'storage_size']
+[06:28]   [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZE TensorRef: tensor_size=[1, 480, 640, 3]
+[06:28]   [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZED tensor shape: torch.Size([1, 480, 640, 3])
+[06:29]   [capture-loop] iter=250 t=30.3s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=7.7/16.0GB (48%) swap=0.3/2.9GB (9%) cpu=69% browser_rss=0.60GB
+[06:30]   Frame 4 saved (frame_003.jpg, t=31.3s)
+[06:30]   [capture-periodic] freeze=3ms shot=137ms unfreeze=4ms saved=True
+[06:35]   [capture-loop] iter=300 t=36.2s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=7.7/16.0GB (48%) swap=0.3/2.9GB (9%) cpu=65% browser_rss=0.60GB
+[06:41]   [capture-loop] iter=350 t=41.8s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=7.7/16.0GB (48%) swap=0.3/2.9GB (9%) cpu=62% browser_rss=0.60GB
+[06:46]   [capture-loop] iter=400 t=47.6s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=7.6/16.0GB (47%) swap=0.3/2.9GB (9%) cpu=62% browser_rss=0.60GB
+[06:52]   [capture-loop] iter=450 t=53.4s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=7.6/16.0GB (48%) swap=0.3/2.9GB (9%) cpu=70% browser_rss=0.58GB
+[06:58]   [capture-loop] iter=500 t=59.2s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=3 ram=7.9/16.0GB (49%) swap=0.3/2.9GB (9%) cpu=66% browser_rss=0.57GB
+[07:00]   [ComfyUI] [SubprocessWorker] callback 'report_progress' from call_id=2
+[07:01]   Frame 5 saved (frame_004.jpg, t=62.0s)
+[07:01]   [capture-periodic] freeze=2ms shot=107ms unfreeze=2ms saved=True
+[07:02]   Node executed (1 total), capturing...
+[07:02]   [ComfyUI] [SubprocessWorker] got response: ok
+[07:02]   [ComfyUI] [comfy-env] UniDepthInfer done (33.61s): result: NodeOutput
+[07:02]   [ComfyUI] [comfy-env] Running UniDepthSavePointCloud: filename_prefix: 'unidepth_points', batch_index: 0, points: dict, rgb_image: torch.float32 [1,480,640,3] cpu
+[07:02]   [ComfyUI] [SubprocessWorker] call_method: nodes.preview_nodes.UniDepthSavePointCloud.EXECUTE_NORMALIZED
+[07:02]   [ComfyUI] [SubprocessWorker] acquired lock, ensuring started...
+[07:02]   [ComfyUI] [ComfyUI-UniDepth] Health check: ping (timeout=5.0s)...
+[07:02]   [ComfyUI] [ComfyUI-UniDepth] Health check: ok
+[07:02]   [ComfyUI] [SubprocessWorker] worker started/confirmed
+[07:02]   [ComfyUI] [comfy-env] PRE-SERIALIZE 'rgb_image' shape: torch.Size([1, 480, 640, 3])
+[07:02]   [ComfyUI] [SubprocessWorker] serializing kwargs to shm...
+[07:02]   [ComfyUI] [SubprocessWorker] created 0 shm blocks
+[07:02]   [ComfyUI] [SubprocessWorker] sending request via socket...
+[07:02]   [ComfyUI] [SubprocessWorker] call_id=3 sending call_method
+[07:02]   [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] _from_shm got dict with keys: ['__type__', 'strategy', 'manager_path', 'storage_key', 'storage_size']
+[07:02]   [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZE TensorRef: tensor_size=[1, 3, 480, 640]
+[07:02]   [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZED tensor shape: torch.Size([1, 3, 480, 640])
+[07:02]   [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] _from_shm got dict with keys: ['__type__', 'strategy', 'manager_path', 'storage_key', 'storage_size']
+[07:02]   [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZE TensorRef: tensor_size=[1, 480, 640, 3]
+[07:02]   [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZED tensor shape: torch.Size([1, 480, 640, 3])
+[07:02]   Frame 6 saved (frame_005.jpg, t=63.3s)
+[07:02]   [capture-node] freeze=3ms shot=122ms unfreeze=4ms saved=True
+[07:02]   [ComfyUI] [SubprocessWorker] got response: ok
+[07:02]   [ComfyUI] [comfy-env] UniDepthSavePointCloud done (0.29s): result: NodeOutput
+[07:02]   [ComfyUI] Prompt executed in 62.60 seconds
+[07:02]   Node executed (2 total), capturing...
+[07:03]   Frame 7 saved (frame_006.jpg, t=63.7s)
+[07:03]   [capture-node] freeze=11ms shot=153ms unfreeze=4ms saved=True
+[07:03]   Execution complete (t=64.0s)
+[07:03]   Captured 7 unique frames over 63.99s
+[07:03]   [debug] iframes: 0
+[07:03]   [timing] trigger_3d_previews: 0.0s
+[07:05]   Saved high-quality screenshot: simple_executed.png
+[07:05]   [timing] final_screenshot: 0.3s
+[07:05]   [2/2] SKIPPED (not in cpu list) with_intrinsics.json
+[07:06] Results saved to D:\a\comfy-gpu-ci\comfy-gpu-ci\comfy-test-logs\UniDepth-1924\dev\windows-portable-cpu\results.json
+[07:06] Model report: 12 files, 1.3 GB -> D:\a\comfy-gpu-ci\comfy-gpu-ci\comfy-test-logs\UniDepth-1924\dev\windows-portable-cpu\models.json
+[07:06] Saved: D:\a\comfy-gpu-ci\comfy-gpu-ci\comfy-test-logs\UniDepth-1924\dev\windows-portable-cpu\index.html
+[07:06] [EXECUTION] PASSED
+[07:06] 
 windows_portable: PASSED
-[08:06] Stopping ComfyUI server...
+[07:06] Stopping ComfyUI server...

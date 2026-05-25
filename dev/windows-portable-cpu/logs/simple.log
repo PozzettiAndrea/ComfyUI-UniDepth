@@ -2,33 +2,121 @@ Capturing execution frames: simple.json
   Frame 1 saved (frame_000.jpg, t=0.0s)
   Validating workflow...
   Queuing workflow for execution...
-  Frame 2 saved (frame_001.jpg, t=2.3s)
-  [capture-periodic] freeze=3ms shot=123ms unfreeze=4ms saved=True
-  Frame 3 saved (frame_002.jpg, t=4.5s)
-  [capture-periodic] freeze=4ms shot=128ms unfreeze=7ms saved=True
-  [capture-loop] iter=50 t=5.9s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=5.5/16.0GB (34%) swap=0.2/2.9GB (8%) cpu=34% browser_rss=0.67GB
-  [capture-loop] iter=100 t=11.9s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=5.5/16.0GB (34%) swap=0.2/2.9GB (8%) cpu=28% browser_rss=0.67GB
-  [capture-loop] iter=150 t=17.5s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=5.6/16.0GB (35%) swap=0.2/2.9GB (8%) cpu=31% browser_rss=0.67GB
-  [capture-loop] iter=200 t=23.3s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=6.6/16.0GB (42%) swap=0.2/2.9GB (8%) cpu=40% browser_rss=0.61GB
-  [capture-loop] iter=250 t=29.5s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=5 ram=7.5/16.0GB (47%) swap=0.2/2.9GB (8%) cpu=60% browser_rss=0.60GB
-  Frame 4 saved (frame_003.jpg, t=33.1s)
-  [capture-periodic] freeze=4ms shot=151ms unfreeze=5ms saved=True
-  [capture-loop] iter=300 t=35.2s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=5 ram=7.1/16.0GB (44%) swap=0.4/2.9GB (13%) cpu=52% browser_rss=0.60GB
-  [capture-loop] iter=350 t=41.1s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=7.0/16.0GB (44%) swap=0.4/2.9GB (13%) cpu=61% browser_rss=0.60GB
-  [capture-loop] iter=400 t=47.0s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=5 ram=7.0/16.0GB (44%) swap=0.4/2.9GB (13%) cpu=60% browser_rss=0.60GB
-  [capture-loop] iter=450 t=52.7s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=5 ram=7.0/16.0GB (44%) swap=0.4/2.9GB (13%) cpu=61% browser_rss=0.60GB
-  [capture-loop] iter=500 t=58.6s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=5 ram=7.1/16.0GB (44%) swap=0.4/2.9GB (13%) cpu=59% browser_rss=0.57GB
-  [capture-loop] iter=550 t=64.5s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=7.3/16.0GB (46%) swap=0.4/2.9GB (13%) cpu=65% browser_rss=0.57GB
+  [ComfyUI] === /validate endpoint called ===
+  [ComfyUI] Received JSON with keys: ['prompt']
+  [ComfyUI] Prompt has 6 nodes
+  [ComfyUI]   Node 1: LoadImage
+  [ComfyUI]     Inputs: {"image": "unidepth_demo.png"}
+  [ComfyUI]   Node 2: UniDepthLoader
+  [ComfyUI]     Inputs: {"model_name": "unidepth-v2-vitl14", "dtype": "fp32", "resolution_level": 9, "interpolation_mode": "bilinear"}
+  [ComfyUI]   Node 3: UniDepthInfer
+  [ComfyUI]     Inputs: {"depth_vmin": 0.01, "depth_vmax": 10, "preview_cmap": "magma_r", "unidepth_model": ["2", 0], "images": ["1", 0]}
+  [ComfyUI]   Node 4: PreviewImage
+  [ComfyUI]     Inputs: {"images": ["3", 0]}
+  [ComfyUI]   Node 5: PreviewImage
+  [ComfyUI]     Inputs: {"images": ["3", 2]}
+  [ComfyUI]   Node 6: UniDepthSavePointCloud
+  [ComfyUI]     Inputs: {"filename_prefix": "unidepth_points", "batch_index": 0, "points": ["3", 5], "rgb_image": ["1", 0]}
+  [ComfyUI] Generated prompt_id: bd419aa7-4e8e-46f3-b96a-717200ee068e
+  [ComfyUI] Calling execution.validate_prompt()...
+  [ComfyUI] Validation result: valid=True
+  [ComfyUI] === Validation PASSED ===
+  [ComfyUI] got prompt
+  [ComfyUI] [comfy-env] Running UniDepthLoader: model_name: 'unidepth-v2-vitl14', dtype: 'fp32', resolution_level: 9, interpolation_mode: 'bilinear'
+  [ComfyUI] [comfy-env] SubprocessWorker: C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\.pixi\envs\default\python.exe
+  [ComfyUI] [comfy-env] env_vars: {'COMFYUI_BASE': 'D:\\a\\comfy-gpu-ci\\comfy-gpu-ci\\test_workspaces\\UniDepth-1924\\portable-comfyui\\ComfyUI_windows_portable\\ComfyUI'}
+  [ComfyUI] [SubprocessWorker] call_method: nodes.load_model.UniDepthLoader.EXECUTE_NORMALIZED
+  [ComfyUI] [SubprocessWorker] acquired lock, ensuring started...
+  [ComfyUI] [comfy-env] default: Library/bin has 237 DLLs
+  [ComfyUI] [ComfyUI-UniDepth] python: C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\.pixi\envs\default\python.exe
+  [ComfyUI] [ComfyUI-UniDepth] sys_path sent to worker: ['D:\\a\\comfy-gpu-ci\\comfy-gpu-ci\\test_workspaces\\UniDepth-1924\\portable-comfyui\\ComfyUI_windows_portable\\ComfyUI', 'D:\\a\\comfy-gpu-ci\\comfy-gpu-ci\\test_workspaces\\UniDepth-1924\\portable-comfyui\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\ComfyUI-UniDepth', 'C:\\Users\\stduser\\AppData\\Local\\Programs\\comfy-env\\envs\\unidepth-nodes\\.pixi\\envs\\default\\Lib\\site-packages', 'D:\\a\\comfy-gpu-ci\\comfy-gpu-ci\\test_workspaces\\UniDepth-1924\\portable-comfyui\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\ComfyUI-UniDepth']
+  [ComfyUI] [SubprocessWorker] is_pixi=True, python=C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\.pixi\envs\default\python.exe
+  [ComfyUI] [SubprocessWorker] launching cmd=['C:\\Users\\stduser\\.pixi\\bin\\pixi.exe', 'run', '--as-is', '--manifest-path', 'C:\\Users\\stduser\\AppData\\Local\\Programs\\comfy-env\\envs\\unidepth-nodes\\pixi.toml', '-e', 'default', 'python', 'C:\\Users\\stduser\\AppData\\Local\\Temp\\comfyui_pvenv_699au87h\\persistent_worker.py', 'tcp://127.0.0.1:63688']...
+  Frame 2 saved (frame_001.jpg, t=3.0s)
+  [capture-periodic] freeze=4ms shot=140ms unfreeze=5ms saved=True
+  Frame 3 saved (frame_002.jpg, t=5.2s)
+  [capture-periodic] freeze=3ms shot=122ms unfreeze=4ms saved=True
+  [ComfyUI] C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\.pixi\envs\default\Lib\site-packages\torch\cuda\__init__.py:180: UserWarning: cudaGetDeviceCount() returned cudaErrorNotSupported, likely using older driver or on CPU machine (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10\cuda\CUDAFunctions.cpp:88.)
+  [ComfyUI]   return torch._C._cuda_getDeviceCount() > 0
+  [ComfyUI] [worker:ComfyUI-UniDepth] ERROR: Failed to import comfy_kitchen, Error: No module named 'comfy_kitchen', fp8 and fp4 support will not be available.
+  [ComfyUI] [SubprocessWorker] worker started/confirmed
+  [ComfyUI] [SubprocessWorker] serializing kwargs to shm...
+  [ComfyUI] [SubprocessWorker] created 0 shm blocks
+  [ComfyUI] [SubprocessWorker] sending request via socket...
+  [ComfyUI] [SubprocessWorker] call_id=1 sending call_method
+  [capture-loop] iter=50 t=6.6s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=6.0/16.0GB (38%) swap=0.3/2.9GB (9%) cpu=42% browser_rss=0.67GB
+  [capture-loop] iter=100 t=12.7s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=8 ram=6.1/16.0GB (38%) swap=0.3/2.9GB (9%) cpu=37% browser_rss=0.67GB
+  [ComfyUI] C:\Users\stduser\AppData\Local\Programs\comfy-env\envs\unidepth-nodes\.pixi\envs\default\Lib\site-packages\timm\models\layers\__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  [ComfyUI]   warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+  [ComfyUI] [worker:ComfyUI-UniDepth] Cannot import NystromAttention, you can not run original UniDepth. UniDepthV2 is available.
+  [ComfyUI] D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\UniDepth-1924\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-UniDepth\nodes\site-packages\unidepth\models\unidepthv2\unidepthv2.py:240: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+  [ComfyUI]   @torch.autocast(device_type="cuda", enabled=True, dtype=torch.float16)
+  [capture-loop] iter=150 t=18.4s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=3 ram=6.2/16.0GB (39%) swap=0.3/2.9GB (9%) cpu=35% browser_rss=0.67GB
+  [ComfyUI] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  [ComfyUI] [worker:ComfyUI-UniDepth] WARNING: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  [ComfyUI] [worker:ComfyUI-UniDepth] WARNING: xFormers not available
+  [ComfyUI] [worker:ComfyUI-UniDepth] WARNING: xFormers not available
+  [ComfyUI] [worker:ComfyUI-UniDepth] Not loading pretrained weights for backbone
+  [capture-loop] iter=200 t=24.0s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=2 ram=7.3/16.0GB (46%) swap=0.3/2.9GB (9%) cpu=51% browser_rss=0.60GB
+  [ComfyUI] [SubprocessWorker] got response: ok
+  [ComfyUI] [comfy-env] UniDepthLoader done (28.51s): result: NodeOutput
+  [ComfyUI] [comfy-env] Running UniDepthInfer: depth_vmin: 0.01, depth_vmax: 10.0, preview_cmap: 'magma_r', unidepth_model: dict, images: torch.float32 [1,480,640,3] cpu
+  [ComfyUI] [SubprocessWorker] call_method: nodes.nodes_inference.UniDepthInfer.EXECUTE_NORMALIZED
+  [ComfyUI] [SubprocessWorker] acquired lock, ensuring started...
+  [ComfyUI] [ComfyUI-UniDepth] Health check: ping (timeout=5.0s)...
+  [ComfyUI] [ComfyUI-UniDepth] Health check: ok
+  [ComfyUI] [SubprocessWorker] worker started/confirmed
+  [ComfyUI] [comfy-env] PRE-SERIALIZE 'images' shape: torch.Size([1, 480, 640, 3])
+  [ComfyUI] [SubprocessWorker] serializing kwargs to shm...
+  [ComfyUI] [SubprocessWorker] created 0 shm blocks
+  [ComfyUI] [SubprocessWorker] sending request via socket...
+  [ComfyUI] [SubprocessWorker] call_id=2 sending call_method
+  [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] _from_shm got dict with keys: ['__type__', 'strategy', 'manager_path', 'storage_key', 'storage_size']
+  [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZE TensorRef: tensor_size=[1, 480, 640, 3]
+  [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZED tensor shape: torch.Size([1, 480, 640, 3])
+  [capture-loop] iter=250 t=30.3s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=7.7/16.0GB (48%) swap=0.3/2.9GB (9%) cpu=69% browser_rss=0.60GB
+  Frame 4 saved (frame_003.jpg, t=31.3s)
+  [capture-periodic] freeze=3ms shot=137ms unfreeze=4ms saved=True
+  [capture-loop] iter=300 t=36.2s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=7.7/16.0GB (48%) swap=0.3/2.9GB (9%) cpu=65% browser_rss=0.60GB
+  [capture-loop] iter=350 t=41.8s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=7.7/16.0GB (48%) swap=0.3/2.9GB (9%) cpu=62% browser_rss=0.60GB
+  [capture-loop] iter=400 t=47.6s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=7.6/16.0GB (47%) swap=0.3/2.9GB (9%) cpu=62% browser_rss=0.60GB
+  [capture-loop] iter=450 t=53.4s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=4 ram=7.6/16.0GB (48%) swap=0.3/2.9GB (9%) cpu=70% browser_rss=0.58GB
+  [capture-loop] iter=500 t=59.2s state={'complete': False, 'error': None, 'executedCount': 0, 'wsState': 1} eval_ms=3 ram=7.9/16.0GB (49%) swap=0.3/2.9GB (9%) cpu=66% browser_rss=0.57GB
+  [ComfyUI] [SubprocessWorker] callback 'report_progress' from call_id=2
+  Frame 5 saved (frame_004.jpg, t=62.0s)
+  [capture-periodic] freeze=2ms shot=107ms unfreeze=2ms saved=True
   Node executed (1 total), capturing...
-  Frame 5 saved (frame_004.jpg, t=67.6s)
-  [capture-node] freeze=4ms shot=143ms unfreeze=4ms saved=True
+  [ComfyUI] [SubprocessWorker] got response: ok
+  [ComfyUI] [comfy-env] UniDepthInfer done (33.61s): result: NodeOutput
+  [ComfyUI] [comfy-env] Running UniDepthSavePointCloud: filename_prefix: 'unidepth_points', batch_index: 0, points: dict, rgb_image: torch.float32 [1,480,640,3] cpu
+  [ComfyUI] [SubprocessWorker] call_method: nodes.preview_nodes.UniDepthSavePointCloud.EXECUTE_NORMALIZED
+  [ComfyUI] [SubprocessWorker] acquired lock, ensuring started...
+  [ComfyUI] [ComfyUI-UniDepth] Health check: ping (timeout=5.0s)...
+  [ComfyUI] [ComfyUI-UniDepth] Health check: ok
+  [ComfyUI] [SubprocessWorker] worker started/confirmed
+  [ComfyUI] [comfy-env] PRE-SERIALIZE 'rgb_image' shape: torch.Size([1, 480, 640, 3])
+  [ComfyUI] [SubprocessWorker] serializing kwargs to shm...
+  [ComfyUI] [SubprocessWorker] created 0 shm blocks
+  [ComfyUI] [SubprocessWorker] sending request via socket...
+  [ComfyUI] [SubprocessWorker] call_id=3 sending call_method
+  [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] _from_shm got dict with keys: ['__type__', 'strategy', 'manager_path', 'storage_key', 'storage_size']
+  [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZE TensorRef: tensor_size=[1, 3, 480, 640]
+  [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZED tensor shape: torch.Size([1, 3, 480, 640])
+  [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] _from_shm got dict with keys: ['__type__', 'strategy', 'manager_path', 'storage_key', 'storage_size']
+  [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZE TensorRef: tensor_size=[1, 480, 640, 3]
+  [ComfyUI] [worker:ComfyUI-UniDepth] [comfy-env] DESERIALIZED tensor shape: torch.Size([1, 480, 640, 3])
+  Frame 6 saved (frame_005.jpg, t=63.3s)
+  [capture-node] freeze=3ms shot=122ms unfreeze=4ms saved=True
+  [ComfyUI] [SubprocessWorker] got response: ok
+  [ComfyUI] [comfy-env] UniDepthSavePointCloud done (0.29s): result: NodeOutput
+  [ComfyUI] Prompt executed in 62.60 seconds
   Node executed (2 total), capturing...
-  Frame 6 saved (frame_005.jpg, t=68.1s)
-  [capture-node] freeze=4ms shot=115ms unfreeze=0ms saved=True
-  Execution complete (t=68.1s)
-  Captured 6 unique frames over 68.21s
+  Frame 7 saved (frame_006.jpg, t=63.7s)
+  [capture-node] freeze=11ms shot=153ms unfreeze=4ms saved=True
+  Execution complete (t=64.0s)
+  Captured 7 unique frames over 63.99s
   [debug] iframes: 0
   [timing] trigger_3d_previews: 0.0s
   Saved high-quality screenshot: simple_executed.png
   [timing] final_screenshot: 0.3s
-    Captured 7 video frames
+    Captured 8 video frames
